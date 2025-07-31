@@ -98,7 +98,6 @@ constraint_in_localspace = true
 
 [resource]
 resource_name = "Rappy Skeleton2d mods"
-enabled = true
 modification_count = 6
 modifications/0 = ExtResource("1_yxk3n")
 modifications/1 = SubResource("SkeletonModification2DCCDIK_wua6k")
