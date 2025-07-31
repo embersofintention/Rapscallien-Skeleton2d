@@ -1,4 +1,4 @@
-[gd_resource type="SkeletonModificationStack2D" load_steps=9 format=3 uid="uid://cg7vxnnbwrcuy"]
+[gd_resource type="SkeletonModificationStack2D" load_steps=10 format=3 uid="uid://cg7vxnnbwrcuy"]
 
 [ext_resource type="SkeletonModification2DCCDIK" uid="uid://dccrptdyl5xel" path="res://skeleton2d mods/tail_tip_IK_1.tres" id="1_yxk3n"]
 
@@ -34,12 +34,20 @@ ccdik_data_chain_length = 2
 joint_data/0/bone_index = 1
 joint_data/0/bone2d_node = NodePath("body1/body2")
 joint_data/0/rotate_from_joint = false
-joint_data/0/enable_constraint = false
+joint_data/0/enable_constraint = true
+joint_data/0/constraint_angle_min = 18.461
+joint_data/0/constraint_angle_max = 347.693
+joint_data/0/constraint_angle_invert = true
+joint_data/0/constraint_in_localspace = true
 joint_data/0/editor_draw_gizmo = true
 joint_data/1/bone_index = 2
-joint_data/1/bone2d_node = NodePath("")
+joint_data/1/bone2d_node = NodePath("body1/body2/body3")
 joint_data/1/rotate_from_joint = false
-joint_data/1/enable_constraint = false
+joint_data/1/enable_constraint = true
+joint_data/1/constraint_angle_min = 24.615
+joint_data/1/constraint_angle_max = 335.385
+joint_data/1/constraint_angle_invert = true
+joint_data/1/constraint_in_localspace = true
 joint_data/1/editor_draw_gizmo = true
 
 [sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_fg68g"]
@@ -114,10 +122,45 @@ constraint_in_localspace = true
 
 [sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_6xgmt"]
 
+[sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_iyo1u"]
+resource_name = "UB IK cursed"
+enabled = false
+target_nodepath = NodePath("../IK Targets/UpperBody target")
+tip_nodepath = NodePath("body1/body2/body3/neck")
+ccdik_data_chain_length = 4
+joint_data/0/bone_index = 18
+joint_data/0/bone2d_node = NodePath("body1/Leg F 1")
+joint_data/0/rotate_from_joint = false
+joint_data/0/enable_constraint = false
+joint_data/0/editor_draw_gizmo = true
+joint_data/1/bone_index = 1
+joint_data/1/bone2d_node = NodePath("body1/body2")
+joint_data/1/rotate_from_joint = false
+joint_data/1/enable_constraint = true
+joint_data/1/constraint_angle_min = 49.231
+joint_data/1/constraint_angle_max = 323.077
+joint_data/1/constraint_angle_invert = true
+joint_data/1/constraint_in_localspace = true
+joint_data/1/editor_draw_gizmo = true
+joint_data/2/bone_index = 2
+joint_data/2/bone2d_node = NodePath("body1/body2/body3")
+joint_data/2/rotate_from_joint = false
+joint_data/2/enable_constraint = true
+joint_data/2/constraint_angle_min = 43.077
+joint_data/2/constraint_angle_max = 316.923
+joint_data/2/constraint_angle_invert = true
+joint_data/2/constraint_in_localspace = true
+joint_data/2/editor_draw_gizmo = true
+joint_data/3/bone_index = -1
+joint_data/3/bone2d_node = NodePath("")
+joint_data/3/rotate_from_joint = false
+joint_data/3/enable_constraint = false
+joint_data/3/editor_draw_gizmo = true
+
 [resource]
 resource_name = "Rappy Skeleton2d mods"
 enabled = true
-modification_count = 8
+modification_count = 9
 modifications/0 = ExtResource("1_yxk3n")
 modifications/1 = SubResource("SkeletonModification2DCCDIK_wua6k")
 modifications/2 = SubResource("SkeletonModification2DCCDIK_yxk3n")
@@ -126,3 +169,4 @@ modifications/4 = SubResource("SkeletonModification2DLookAt_fg68g")
 modifications/5 = SubResource("SkeletonModification2DCCDIK_55ft4")
 modifications/6 = SubResource("SkeletonModification2DLookAt_55ft4")
 modifications/7 = SubResource("SkeletonModification2DCCDIK_6xgmt")
+modifications/8 = SubResource("SkeletonModification2DCCDIK_iyo1u")
