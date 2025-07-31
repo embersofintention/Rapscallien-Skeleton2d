@@ -20,7 +20,7 @@ texture = ExtResource("1_j7dim")
 [node name="POLYGONS" type="Node2D" parent="."]
 
 [node name="Ponytail" type="Polygon2D" parent="POLYGONS"]
-position = Vector2(-185, -390)
+position = Vector2(-175, -404.777)
 texture = ExtResource("1_56ahy")
 skeleton = NodePath("../../Skeleton2D")
 polygon = PackedVector2Array(58, 51.5, 95.5029, 39.2539, 125, -0.5, 173, -18.5, 195.595, 57.9967, 167.726, 130.987, 115.305, 140.277, 58, 203.5, -16, 136.5, 15, 65.5, 104.839, 105.293, 135.541, 70.1928)
@@ -60,7 +60,7 @@ bones = ["body1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0
 internal_vertex_count = 2
 
 [node name="Head" type="Polygon2D" parent="POLYGONS"]
-position = Vector2(73, -331)
+position = Vector2(83, -345.777)
 offset = Vector2(-246, -97)
 texture = ExtResource("2_qowsh")
 skeleton = NodePath("../../Skeleton2D")
@@ -71,7 +71,7 @@ bones = ["body1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 internal_vertex_count = 2
 
 [node name="Arm F" type="Polygon2D" parent="POLYGONS"]
-position = Vector2(-130, -290)
+position = Vector2(-129.002, -304.009)
 texture = ExtResource("4_4pp56")
 skeleton = NodePath("../../Skeleton2D")
 polygon = PackedVector2Array(169.252, 79.6231, 151.846, 110.774, 159.297, 136.232, 158.055, 192.736, 120.8, 221.919, 63.0545, 215.71, 29.5247, 180.318, 15.8644, 134.99, 14.0017, 108.291, 18.9691, 85.3166, 30.7666, 61.1007, 52.4988, 29.4337, 102.173, -0.991447, 161.781, 7.08053, 179.167, 52.4078, 87.0891, 97.2407, 83.675, 145.734)
@@ -103,8 +103,8 @@ rest = Transform2D(1, 0, 0, 1, -5, -64)
 metadata/_local_pose_override_enabled_ = true
 
 [node name="head" type="Bone2D" parent="Skeleton2D/body1/body2/body3/neck"]
-position = Vector2(-34, -23)
-rest = Transform2D(1, 0, 0, 1, -34, -23)
+position = Vector2(-24, -37.7769)
+rest = Transform2D(1, 0, 0, 1, -24, -37.7769)
 metadata/_local_pose_override_enabled_ = true
 
 [node name="head2" type="Bone2D" parent="Skeleton2D/body1/body2/body3/neck/head"]
@@ -137,8 +137,10 @@ length = 62.081
 bone_angle = -45.405
 
 [node name="Arm F 1" type="Bone2D" parent="Skeleton2D/body1/body2/body3"]
-position = Vector2(-72, -52)
-rest = Transform2D(1, 0, 0, 1, -72, -52)
+position = Vector2(-69.8215, -65.8784)
+rotation = 0.0614418
+scale = Vector2(0.999984, 0.999984)
+rest = Transform2D(0.998097, 0.0614022, -0.0614022, 0.998097, -69.8215, -65.8784)
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Arm F 2" type="Bone2D" parent="Skeleton2D/body1/body2/body3/Arm F 1"]
@@ -157,11 +159,11 @@ metadata/_local_pose_override_enabled_ = true
 [node name="Tail 1" type="Bone2D" parent="Skeleton2D/body1/body2"]
 position = Vector2(-92, 18)
 rest = Transform2D(1, 0, 0, 1, -92, 18)
-metadata/_local_pose_override_enabled_ = true
 
 [node name="Tail 2" type="Bone2D" parent="Skeleton2D/body1/body2/Tail 1"]
 position = Vector2(-52, 15)
 rest = Transform2D(1, 0, 0, 1, -52, 15)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Tail 3" type="Bone2D" parent="Skeleton2D/body1/body2/Tail 1/Tail 2"]
 position = Vector2(-77, 10)
@@ -184,7 +186,6 @@ rest = Transform2D(1, 0, 0, 1, -72, -9)
 auto_calculate_length_and_angle = false
 length = 145.187
 bone_angle = -168.679
-metadata/_local_pose_override_enabled_ = true
 
 [node name="Leg F 1" type="Bone2D" parent="Skeleton2D/body1"]
 position = Vector2(-78, -45)
@@ -202,27 +203,13 @@ rest = Transform2D(1, 0, 0, 1, -11, 71)
 auto_calculate_length_and_angle = false
 length = 89.73
 bone_angle = 0.0
+metadata/_local_pose_override_enabled_ = true
 
 [node name="WHAT" type="Bone2D" parent="Skeleton2D"]
 visible = false
 rest = Transform2D(1, 0, 0, 1, 0, 0)
 
 [node name="IK Targets" type="Node2D" parent="."]
-
-[node name="Leg F Target" type="Node2D" parent="IK Targets"]
-position = Vector2(1, 14)
-
-[node name="Foot F Target" type="Node2D" parent="IK Targets/Leg F Target"]
-position = Vector2(88, -3)
-
-[node name="Arm F Target" type="Node2D" parent="IK Targets"]
-position = Vector2(-46, -131)
-
-[node name="Hand F Target" type="Node2D" parent="IK Targets/Arm F Target"]
-position = Vector2(9, 76)
-
-[node name="UpperBody target" type="Node2D" parent="IK Targets"]
-position = Vector2(64, -257)
 
 [node name="Head Target" type="Node2D" parent="IK Targets"]
 position = Vector2(66, -423)
@@ -235,6 +222,21 @@ position = Vector2(131, 7)
 
 [node name="Ponytail target" type="Node2D" parent="IK Targets/Head Target"]
 position = Vector2(-284, 206)
+
+[node name="UpperBody target" type="Node2D" parent="IK Targets"]
+position = Vector2(57, -302)
+
+[node name="Arm F Target" type="Node2D" parent="IK Targets"]
+position = Vector2(-45.0017, -145.009)
+
+[node name="Hand F Target" type="Node2D" parent="IK Targets/Arm F Target"]
+position = Vector2(9, 76)
+
+[node name="Leg F Target" type="Node2D" parent="IK Targets"]
+position = Vector2(1, 14)
+
+[node name="Foot F Target" type="Node2D" parent="IK Targets/Leg F Target"]
+position = Vector2(88, -3)
 
 [node name="Tail Mid Target" type="Node2D" parent="IK Targets"]
 position = Vector2(-88, -75)
