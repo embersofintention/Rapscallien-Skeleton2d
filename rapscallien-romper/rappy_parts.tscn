@@ -99,7 +99,7 @@ rest = Transform2D(1, 0, 0, 1, -52, 67)
 position = Vector2(1, 41)
 rest = Transform2D(1, 0, 0, 1, 1, 41)
 auto_calculate_length_and_angle = false
-length = 126.595
+length = 71.298
 bone_angle = 71.351
 
 [node name="neck" type="Bone2D" parent="Skeleton2D/body1/body2"]
@@ -180,3 +180,21 @@ bone_angle = -168.679
 rest = Transform2D(1, 0, 0, 1, 0, 0)
 
 [node name="IK Targets" type="Node2D" parent="."]
+
+[node name="Tail Tip target" type="Node2D" parent="IK Targets"]
+position = Vector2(-536, -158)
+
+[node name="Leg F Target" type="Node2D" parent="IK Targets"]
+position = Vector2(-25, -26)
+
+[node name="Foot F Target" type="Node2D" parent="IK Targets/Leg F Target"]
+position = Vector2(92, 3)
+
+[node name="Arm F Target" type="Node2D" parent="IK Targets"]
+position = Vector2(-47, -139)
+
+[node name="Hand F Target" type="Node2D" parent="IK Targets/Arm F Target"]
+position = Vector2(-2, 0)
+
+[node name="Head LookAt" type="Node2D" parent="IK Targets"]
+position = Vector2(66, -423)
