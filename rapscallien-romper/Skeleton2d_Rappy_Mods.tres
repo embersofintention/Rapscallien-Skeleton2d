@@ -102,7 +102,7 @@ resource_name = "Arm F IK"
 target_nodepath = NodePath("../IK Targets/Arm F Target")
 tip_nodepath = NodePath("body1/body2/body3/Arm F 1/Arm F 2/Hand F")
 ccdik_data_chain_length = 2
-joint_data/0/bone_index = 9
+joint_data/0/bone_index = 10
 joint_data/0/bone2d_node = NodePath("body1/body2/body3/Arm F 1")
 joint_data/0/rotate_from_joint = false
 joint_data/0/enable_constraint = true
@@ -111,7 +111,7 @@ joint_data/0/constraint_angle_max = 236.923
 joint_data/0/constraint_angle_invert = true
 joint_data/0/constraint_in_localspace = true
 joint_data/0/editor_draw_gizmo = true
-joint_data/1/bone_index = 10
+joint_data/1/bone_index = 11
 joint_data/1/bone2d_node = NodePath("body1/body2/body3/Arm F 1/Arm F 2")
 joint_data/1/rotate_from_joint = false
 joint_data/1/enable_constraint = true
@@ -123,7 +123,7 @@ joint_data/1/editor_draw_gizmo = true
 
 [sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_55ft4"]
 resource_name = "Hand F Lookat"
-bone_index = 11
+bone_index = 12
 bone2d_node = NodePath("body1/body2/body3/Arm F 1/Arm F 2/Hand F")
 target_nodepath = NodePath("../IK Targets/Arm F Target/Hand F Target")
 enable_constraint = true
@@ -195,6 +195,7 @@ joint_data/1/editor_draw_gizmo = true
 
 [resource]
 resource_name = "Rappy Skeleton2d mods"
+enabled = true
 modification_count = 11
 modifications/0 = ExtResource("1_yxk3n")
 modifications/1 = SubResource("SkeletonModification2DCCDIK_wua6k")
