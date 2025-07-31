@@ -1,9 +1,10 @@
-[gd_resource type="SkeletonModificationStack2D" load_steps=7 format=3 uid="uid://cg7vxnnbwrcuy"]
+[gd_resource type="SkeletonModificationStack2D" load_steps=8 format=3 uid="uid://cg7vxnnbwrcuy"]
 
 [ext_resource type="SkeletonModification2DCCDIK" uid="uid://dccrptdyl5xel" path="res://skeleton2d mods/tail_tip_IK_1.tres" id="1_yxk3n"]
 
 [sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_wua6k"]
 resource_name = "Tail Base IK"
+enabled = false
 target_nodepath = NodePath("../IK Targets/Tail Mid Target")
 tip_nodepath = NodePath("body1/body2/Tail 1/Tail 2/Tail 3")
 ccdik_data_chain_length = 2
@@ -28,6 +29,7 @@ joint_data/1/editor_draw_gizmo = true
 
 [sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_fg68g"]
 resource_name = "Leg F IK"
+enabled = false
 target_nodepath = NodePath("../IK Targets/Leg F Target")
 tip_nodepath = NodePath("body1/body2/Leg F 1/Leg F 2/Foot F")
 ccdik_data_chain_length = 2
@@ -52,7 +54,8 @@ joint_data/1/editor_draw_gizmo = true
 
 [sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_fg68g"]
 resource_name = "Foot F Lookat"
-bone_index = 13
+enabled = false
+bone_index = 7
 bone2d_node = NodePath("body1/body2/Leg F 1/Leg F 2/Foot F")
 target_nodepath = NodePath("../IK Targets/Leg F Target/Foot F Target")
 enable_constraint = true
@@ -63,6 +66,7 @@ constraint_in_localspace = true
 
 [sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_55ft4"]
 resource_name = "Arm F IK"
+enabled = false
 target_nodepath = NodePath("../IK Targets/Arm F Target")
 tip_nodepath = NodePath("body1/body2/Arm F 1/Arm F 2/Hand F")
 ccdik_data_chain_length = 2
@@ -87,6 +91,7 @@ joint_data/1/editor_draw_gizmo = true
 
 [sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_55ft4"]
 resource_name = "Hand F Lookat"
+enabled = false
 bone_index = 4
 bone2d_node = NodePath("body1/body2/Arm F 1/Arm F 2/Hand F")
 target_nodepath = NodePath("../IK Targets/Arm F Target/Hand F Target")
@@ -96,12 +101,19 @@ constraint_angle_max = 309.142
 constraint_angle_invert = true
 constraint_in_localspace = true
 
+[sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_yxk3n"]
+resource_name = "Upper Body IK"
+target_nodepath = NodePath("../IK Targets/UpperBody target")
+tip_nodepath = NodePath("body1/body2/body 2-x/neck")
+
 [resource]
 resource_name = "Rappy Skeleton2d mods"
-modification_count = 6
+enabled = true
+modification_count = 7
 modifications/0 = ExtResource("1_yxk3n")
 modifications/1 = SubResource("SkeletonModification2DCCDIK_wua6k")
 modifications/2 = SubResource("SkeletonModification2DCCDIK_fg68g")
 modifications/3 = SubResource("SkeletonModification2DLookAt_fg68g")
 modifications/4 = SubResource("SkeletonModification2DCCDIK_55ft4")
 modifications/5 = SubResource("SkeletonModification2DLookAt_55ft4")
+modifications/6 = SubResource("SkeletonModification2DCCDIK_yxk3n")

@@ -2,6 +2,7 @@
 
 [resource]
 resource_name = "Tail Tip IK"
+enabled = false
 target_nodepath = NodePath("../IK Targets/Tail Mid Target/Tail Tip target")
 tip_nodepath = NodePath("body1/body2/Tail 1/Tail 2/Tail 3/Tail 4/Tail 5/Tail 6")
 ccdik_data_chain_length = 3
