@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://dkoerdlvheddm"]
+[gd_scene load_steps=8 format=3 uid="uid://dkoerdlvheddm"]
 
 [ext_resource type="Texture2D" uid="uid://d33xujgdx3l3t" path="res://Player Parts/Hair.png" id="1_56ahy"]
 [ext_resource type="Texture2D" uid="uid://byjiiv22kmijq" path="res://Player Parts/godot skeleton2d Rapscallien 01.png" id="1_j7dim"]
 [ext_resource type="Texture2D" uid="uid://dtbatuhhupfyd" path="res://Player Parts/Tail.png" id="2_2uejj"]
 [ext_resource type="Texture2D" uid="uid://cm6q434sses54" path="res://Player Parts/head.png" id="2_qowsh"]
 [ext_resource type="Texture2D" uid="uid://d3xs5ahwynb81" path="res://Player Parts/Leg.png" id="3_e5jna"]
+[ext_resource type="Texture2D" uid="uid://dgowoldh63i57" path="res://Player Parts/Arm.png" id="4_4pp56"]
+[ext_resource type="Texture2D" uid="uid://mu4siid5pf5y" path="res://Player Parts/Body.png" id="5_fg68g"]
 
 [node name="RappyParts" type="Node2D"]
 
@@ -27,14 +29,21 @@ internal_vertex_count = 5
 [node name="Leg F" type="Polygon2D" parent="POLYGONS"]
 position = Vector2(-71, -158)
 texture = ExtResource("3_e5jna")
-polygon = PackedVector2Array(141.062, 45.9583, 149.258, 72.5958, 142.428, 97.8673, 132.183, 115.626, 149.941, 151.825, 127.402, 166.852, 50.9043, 169.584, -16.031, 144.312, 3.7764, 110.845, -4.41977, 91.0372, -8.51785, 63.7166, -1.68771, 38.4451, 26.9989, 1.5624, 69.3457, -12.7809, 121.255, 2.92842, 67.5523, 82.2836)
-uv = PackedVector2Array(141.062, 45.9583, 149.258, 72.5958, 142.428, 97.8673, 132.183, 115.626, 149.941, 151.825, 127.402, 166.852, 50.9043, 169.584, -16.031, 144.312, 3.7764, 110.845, -4.41977, 91.0372, -8.51785, 63.7166, -1.68771, 38.4451, 26.9989, 1.5624, 69.3457, -12.7809, 121.255, 2.92842, 67.5523, 82.2836)
-polygons = [PackedInt32Array(15, 0, 1), PackedInt32Array(15, 1, 2), PackedInt32Array(15, 14, 0), PackedInt32Array(15, 9, 8), PackedInt32Array(15, 10, 9)]
-internal_vertex_count = 1
+polygon = PackedVector2Array(141.062, 45.9583, 149.258, 72.5958, 142.428, 97.8673, 132.183, 115.626, 149.941, 151.825, 127.402, 166.852, 50.9043, 169.584, -16.031, 144.312, 3.7764, 110.845, -4.41977, 91.0372, -8.51785, 63.7166, -1.68771, 38.4451, 26.9989, 1.5624, 69.3457, -12.7809, 121.255, 2.92842, 67.5523, 82.2836, 51.4686, 132.322, 58.6069, 108.84)
+uv = PackedVector2Array(141.062, 45.9583, 149.258, 72.5958, 142.428, 97.8673, 132.183, 115.626, 149.941, 151.825, 127.402, 166.852, 50.9043, 169.584, -16.031, 144.312, 3.7764, 110.845, -4.41977, 91.0372, -8.51785, 63.7166, -1.68771, 38.4451, 26.9989, 1.5624, 69.3457, -12.7809, 121.255, 2.92842, 67.5523, 82.2836, 51.4686, 132.322, 58.6069, 108.84)
+polygons = [PackedInt32Array(15, 0, 1), PackedInt32Array(15, 1, 2), PackedInt32Array(15, 14, 0), PackedInt32Array(15, 9, 8), PackedInt32Array(15, 10, 9), PackedInt32Array(15, 11, 10), PackedInt32Array(16, 7, 8, 17), PackedInt32Array(16, 6, 7), PackedInt32Array(8, 15, 17), PackedInt32Array(15, 11, 14), PackedInt32Array(14, 11, 12, 13), PackedInt32Array(17, 15, 2), PackedInt32Array(17, 2, 3), PackedInt32Array(17, 3, 16), PackedInt32Array(16, 3, 4), PackedInt32Array(16, 4, 5), PackedInt32Array(16, 5, 6)]
+internal_vertex_count = 3
 
 [node name="Arm F" type="Polygon2D" parent="POLYGONS"]
+position = Vector2(-130, -290)
+texture = ExtResource("4_4pp56")
+polygon = PackedVector2Array(167.99, 92.7677, 151.846, 110.774, 159.297, 136.232, 158.055, 192.736, 120.8, 221.919, 63.0545, 215.71, 29.5247, 180.318, 15.8644, 134.99, 14.0017, 108.291, 18.9691, 85.3166, 30.7666, 61.1007, 52.4988, 29.4337, 102.173, -0.991447, 161.781, 7.08053, 179.167, 52.4078, 87.0891, 97.2407, 83.675, 145.734)
+uv = PackedVector2Array(167.99, 92.7677, 151.846, 110.774, 159.297, 136.232, 158.055, 192.736, 120.8, 221.919, 63.0545, 215.71, 29.5247, 180.318, 15.8644, 134.99, 14.0017, 108.291, 18.9691, 85.3166, 30.7666, 61.1007, 52.4988, 29.4337, 102.173, -0.991447, 161.781, 7.08053, 179.167, 52.4078, 87.0891, 97.2407, 83.675, 145.734)
+polygons = [PackedInt32Array(15, 9, 8), PackedInt32Array(15, 10, 9), PackedInt32Array(15, 1, 0), PackedInt32Array(15, 7, 8), PackedInt32Array(15, 10, 11), PackedInt32Array(15, 0, 11), PackedInt32Array(16, 1, 2), PackedInt32Array(16, 7, 6), PackedInt32Array(11, 12, 13, 14, 0), PackedInt32Array(16, 15, 7), PackedInt32Array(16, 15, 1), PackedInt32Array(6, 16, 2, 3, 4, 5)]
+internal_vertex_count = 2
 
 [node name="Body" type="Polygon2D" parent="POLYGONS"]
+texture = ExtResource("5_fg68g")
 
 [node name="Head" type="Polygon2D" parent="POLYGONS"]
 position = Vector2(-173, -428)
