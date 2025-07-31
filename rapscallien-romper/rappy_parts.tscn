@@ -2,13 +2,19 @@
 
 [ext_resource type="Texture2D" uid="uid://d33xujgdx3l3t" path="res://Player Parts/Hair.png" id="1_56ahy"]
 [ext_resource type="Texture2D" uid="uid://byjiiv22kmijq" path="res://Player Parts/godot skeleton2d Rapscallien 01.png" id="1_j7dim"]
-[ext_resource type="Texture2D" uid="uid://dtbatuhhupfyd" path="res://Player Parts/Tail.png" id="2_2uejj"]
 [ext_resource type="Texture2D" uid="uid://cm6q434sses54" path="res://Player Parts/head.png" id="2_qowsh"]
 [ext_resource type="Texture2D" uid="uid://d3xs5ahwynb81" path="res://Player Parts/Leg.png" id="3_e5jna"]
+[ext_resource type="Texture2D" uid="uid://hal2p4yogqmm" path="res://Player Parts/Tail 2.png" id="3_fg68g"]
 [ext_resource type="Texture2D" uid="uid://dgowoldh63i57" path="res://Player Parts/Arm.png" id="4_4pp56"]
-[ext_resource type="Texture2D" uid="uid://mu4siid5pf5y" path="res://Player Parts/Body.png" id="5_fg68g"]
+[ext_resource type="Texture2D" uid="uid://mu4siid5pf5y" path="res://Player Parts/Body.png" id="4_fg68g"]
 
 [node name="RappyParts" type="Node2D"]
+
+[node name="REF" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.0666667)
+position = Vector2(-19, -198)
+texture = ExtResource("1_j7dim")
 
 [node name="POLYGONS" type="Node2D" parent="."]
 
@@ -19,10 +25,10 @@ polygon = PackedVector2Array(58, 51.5, 93, 42.5, 125, -0.5, 173, -18.5, 197, 20.
 uv = PackedVector2Array(58, 51.5, 93, 42.5, 125, -0.5, 173, -18.5, 197, 20.5, 176, 134.5, 111, 150.5, 58, 203.5, -16, 136.5, 15, 65.5)
 
 [node name="Tail" type="Polygon2D" parent="POLYGONS"]
-position = Vector2(-486, -198)
-texture = ExtResource("2_2uejj")
-polygon = PackedVector2Array(135.965, 34.5009, 215.604, 40.5115, 305.762, 41.2628, 391.412, 32.9983, 454.522, 17.2207, 515.379, 45.7707, 477.062, 107.378, 401.179, 114.14, 308.767, 117.146, 205.086, 114.14, 117.182, 108.13, -10.5415, 101.368, -18.8059, 39.7601, 97.6478, -15.0858, 166.29, 74.5216, 257.131, 77.2537, 352.07, 75.8877, 432.665, 66.3255, 102.399, 63.9042)
-uv = PackedVector2Array(135.965, 34.5009, 215.604, 40.5115, 305.762, 41.2628, 391.412, 32.9983, 454.522, 17.2207, 515.379, 45.7707, 477.062, 107.378, 401.179, 114.14, 308.767, 117.146, 205.086, 114.14, 117.182, 108.13, -10.5415, 101.368, -18.8059, 39.7601, 97.6478, -15.0858, 166.29, 74.5216, 257.131, 77.2537, 352.07, 75.8877, 432.665, 66.3255, 102.399, 63.9042)
+position = Vector2(-484, -199)
+texture = ExtResource("3_fg68g")
+polygon = PackedVector2Array(134.41, 41.4969, 214.049, 47.5075, 304.207, 48.2588, 389.857, 39.9943, 452.967, 24.2167, 513.824, 52.7667, 475.507, 114.374, 399.624, 121.136, 307.212, 124.142, 203.531, 121.136, 115.627, 115.126, -12.0962, 108.364, -20.3606, 46.7561, 96.0931, -8.0898, 164.735, 81.5176, 255.576, 84.2497, 350.515, 82.8837, 431.11, 73.3215, 100.844, 70.9002)
+uv = PackedVector2Array(134.41, 41.4969, 214.049, 47.5075, 304.207, 48.2588, 389.857, 39.9943, 452.967, 24.2167, 513.824, 52.7667, 475.507, 114.374, 399.624, 121.136, 307.212, 124.142, 203.531, 121.136, 115.627, 115.126, -12.0962, 108.364, -20.3606, 46.7561, 96.0931, -8.0898, 164.735, 81.5176, 255.576, 84.2497, 350.515, 82.8837, 431.11, 73.3215, 100.844, 70.9002)
 polygons = [PackedInt32Array(4, 17, 3), PackedInt32Array(3, 16, 2), PackedInt32Array(2, 15, 1), PackedInt32Array(1, 14, 0), PackedInt32Array(14, 9, 15, 1), PackedInt32Array(15, 8, 16, 2), PackedInt32Array(16, 7, 17, 3), PackedInt32Array(17, 6, 5, 4), PackedInt32Array(17, 6, 7), PackedInt32Array(7, 16, 8), PackedInt32Array(8, 15, 9), PackedInt32Array(9, 14, 10), PackedInt32Array(14, 0, 10), PackedInt32Array(0, 18, 10), PackedInt32Array(18, 13, 0), PackedInt32Array(18, 13, 12), PackedInt32Array(18, 12, 11), PackedInt32Array(18, 11, 10)]
 internal_vertex_count = 5
 
@@ -34,6 +40,16 @@ uv = PackedVector2Array(141.062, 45.9583, 149.258, 72.5958, 142.428, 97.8673, 13
 polygons = [PackedInt32Array(15, 0, 1), PackedInt32Array(15, 1, 2), PackedInt32Array(15, 14, 0), PackedInt32Array(15, 9, 8), PackedInt32Array(15, 10, 9), PackedInt32Array(15, 11, 10), PackedInt32Array(16, 7, 8, 17), PackedInt32Array(16, 6, 7), PackedInt32Array(8, 15, 17), PackedInt32Array(15, 11, 14), PackedInt32Array(14, 11, 12, 13), PackedInt32Array(17, 15, 2), PackedInt32Array(17, 2, 3), PackedInt32Array(17, 3, 16), PackedInt32Array(16, 3, 4), PackedInt32Array(16, 4, 5), PackedInt32Array(16, 5, 6)]
 internal_vertex_count = 3
 
+[node name="Body1" type="Polygon2D" parent="POLYGONS"]
+position = Vector2(-105, -358)
+texture = ExtResource("4_fg68g")
+skeleton = NodePath("../../Skeleton2D")
+polygon = PackedVector2Array(71.5999, 47.3, 109, 9.89999, 197, 6.59999, 224.5, 45.1, 259.7, 63.8, 267.4, 106.7, 276.2, 152.9, 285, 205.7, 275.1, 255.2, 232.2, 290.4, 138.7, 295.9, 55.0999, 258.5, 21, 200.2, 37.5, 167.2, 40.8, 143, 35.3, 103.4, 178.3, 190.3, 165.1, 100.1)
+uv = PackedVector2Array(71.5999, 47.3, 109, 9.89999, 197, 6.59999, 224.5, 45.1, 259.7, 63.8, 267.4, 106.7, 276.2, 152.9, 285, 205.7, 275.1, 255.2, 232.2, 290.4, 138.7, 295.9, 55.0999, 258.5, 21, 200.2, 37.5, 167.2, 40.8, 143, 35.3, 103.4, 178.3, 190.3, 165.1, 100.1)
+polygons = [PackedInt32Array(3, 2, 1, 0), PackedInt32Array(3, 17, 4), PackedInt32Array(17, 0, 15), PackedInt32Array(17, 3, 0), PackedInt32Array(17, 4, 5), PackedInt32Array(17, 15, 14), PackedInt32Array(17, 6, 5), PackedInt32Array(16, 6, 7), PackedInt32Array(16, 7, 8), PackedInt32Array(16, 8, 9), PackedInt32Array(16, 9, 10), PackedInt32Array(16, 10, 11), PackedInt32Array(16, 11, 12), PackedInt32Array(16, 12, 13), PackedInt32Array(16, 13, 14), PackedInt32Array(14, 6, 17), PackedInt32Array(14, 16, 6)]
+bones = ["body1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0), "body1/body2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/neck", PackedFloat32Array(0.41, 0.11, 0.11, 0.41, 0.54, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1), "body1/body2/neck/head_rot", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Arm F 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Arm F 1/Arm F 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Arm F 1/Arm F 2/Hand F", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Leg F 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Leg F 1/Leg F 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Leg F 1/Leg F 2/Foot F", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1/Tail 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1/Tail 2/Tail 3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1/Tail 2/Tail 3/Tail 4", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1/Tail 2/Tail 3/Tail 4/Tail 5", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1/Tail 2/Tail 3/Tail 4/Tail 5/Tail 6", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "WHAT", PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1)]
+internal_vertex_count = 2
+
 [node name="Arm F" type="Polygon2D" parent="POLYGONS"]
 position = Vector2(-130, -290)
 texture = ExtResource("4_4pp56")
@@ -42,16 +58,106 @@ uv = PackedVector2Array(167.99, 92.7677, 151.846, 110.774, 159.297, 136.232, 158
 polygons = [PackedInt32Array(15, 9, 8), PackedInt32Array(15, 10, 9), PackedInt32Array(15, 1, 0), PackedInt32Array(15, 7, 8), PackedInt32Array(15, 10, 11), PackedInt32Array(15, 0, 11), PackedInt32Array(16, 1, 2), PackedInt32Array(16, 7, 6), PackedInt32Array(11, 12, 13, 14, 0), PackedInt32Array(16, 15, 7), PackedInt32Array(16, 15, 1), PackedInt32Array(6, 16, 2, 3, 4, 5)]
 internal_vertex_count = 2
 
-[node name="Body" type="Polygon2D" parent="POLYGONS"]
-texture = ExtResource("5_fg68g")
-
 [node name="Head" type="Polygon2D" parent="POLYGONS"]
-position = Vector2(-173, -428)
+position = Vector2(73, -331)
+offset = Vector2(-246, -97)
 texture = ExtResource("2_qowsh")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PackedVector2Array(160.858, 16.5756, 150.34, 1.54926, 133.059, -11.2231, 76.7107, 22.5861, 74.4567, 85.6965, 92.4883, 99.9715, 109.769, 103.728, 150.34, 160.077, 235.238, 195.388, 272.053, 204.404, 309.618, 189.378, 365.216, 146.553, 359.205, 103.728, 346.433, 88.7018, 359.956, 78.1834, 374.983, 50.3847, 352.443, -4.46126, 316.38, -6.7152, 308.867, 7.55978, 287.079, -8.96915, 193.164, -6.7152)
 uv = PackedVector2Array(160.858, 16.5756, 150.34, 1.54926, 133.059, -11.2231, 76.7107, 22.5861, 74.4567, 85.6965, 92.4883, 99.9715, 109.769, 103.728, 150.34, 160.077, 235.238, 195.388, 272.053, 204.404, 309.618, 189.378, 365.216, 146.553, 359.205, 103.728, 346.433, 88.7018, 359.956, 78.1834, 374.983, 50.3847, 352.443, -4.46126, 316.38, -6.7152, 308.867, 7.55978, 287.079, -8.96915, 193.164, -6.7152)
+bones = ["body1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Arm F 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Arm F 1/Arm F 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Arm F 1/Arm F 2/Hand F", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/body3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/body3/head", PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), "body1/body2/body3/head/ear f", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/body3/head/ear b", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Leg F 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Leg F 1/Leg F 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Leg F 1/Leg F 2/Foot F", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1/Tail 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1/Tail 2/Tail 3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1/Tail 2/Tail 3/Tail 4", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1/Tail 2/Tail 3/Tail 4/Tail 5", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1/Tail 2/Tail 3/Tail 4/Tail 5/Tail 6", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "WHAT", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
 
-[node name="REF" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0.0666667)
-position = Vector2(-19, -198)
-texture = ExtResource("1_j7dim")
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+
+[node name="body1" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(78, -89)
+rest = Transform2D(1, 0, 0, 1, 78, -89)
+
+[node name="body2" type="Bone2D" parent="Skeleton2D/body1"]
+position = Vector2(2, -71)
+rest = Transform2D(1, 0, 0, 1, 2, -71)
+
+[node name="Arm F 1" type="Bone2D" parent="Skeleton2D/body1/body2"]
+position = Vector2(-75, -92)
+rest = Transform2D(1, 0, 0, 1, -75, -92)
+
+[node name="Arm F 2" type="Bone2D" parent="Skeleton2D/body1/body2/Arm F 1"]
+position = Vector2(-52, 67)
+rest = Transform2D(1, 0, 0, 1, -52, 67)
+
+[node name="Hand F" type="Bone2D" parent="Skeleton2D/body1/body2/Arm F 1/Arm F 2"]
+position = Vector2(1, 41)
+rest = Transform2D(1, 0, 0, 1, 1, 41)
+auto_calculate_length_and_angle = false
+length = 71.298
+bone_angle = 71.351
+
+[node name="body3" type="Bone2D" parent="Skeleton2D/body1/body2"]
+position = Vector2(-11, -98)
+rest = Transform2D(1, 0, 0, 1, -11, -98)
+
+[node name="head" type="Bone2D" parent="Skeleton2D/body1/body2/body3"]
+position = Vector2(-2, -24)
+rest = Transform2D(1, 0, 0, 1, -2, -24)
+auto_calculate_length_and_angle = false
+length = 130.3
+bone_angle = -131.889
+
+[node name="ear f" type="Bone2D" parent="Skeleton2D/body1/body2/body3/head"]
+position = Vector2(-87, -97)
+rest = Transform2D(1, 0, 0, 1, -87, -97)
+auto_calculate_length_and_angle = false
+length = 62.081
+bone_angle = -136.217
+
+[node name="ear b" type="Bone2D" parent="Skeleton2D/body1/body2/body3/head"]
+position = Vector2(79, -97)
+rest = Transform2D(1, 0, 0, 1, 79, -97)
+auto_calculate_length_and_angle = false
+length = 62.081
+bone_angle = -45.405
+
+[node name="Leg F 1" type="Bone2D" parent="Skeleton2D/body1/body2"]
+position = Vector2(-83, 10)
+rest = Transform2D(1, 0, 0, 1, -83, 10)
+
+[node name="Leg F 2" type="Bone2D" parent="Skeleton2D/body1/body2/Leg F 1"]
+position = Vector2(8, 63)
+rest = Transform2D(1, 0, 0, 1, 8, 63)
+
+[node name="Foot F" type="Bone2D" parent="Skeleton2D/body1/body2/Leg F 1/Leg F 2"]
+position = Vector2(-25, 62)
+rest = Transform2D(1, 0, 0, 1, -25, 62)
+auto_calculate_length_and_angle = false
+length = 89.73
+bone_angle = 0.0
+
+[node name="Tail 1" type="Bone2D" parent="Skeleton2D/body1/body2"]
+position = Vector2(-92, 18)
+rest = Transform2D(1, 0, 0, 1, -92, 18)
+
+[node name="Tail 2" type="Bone2D" parent="Skeleton2D/body1/body2/Tail 1"]
+position = Vector2(-52, 15)
+rest = Transform2D(1, 0, 0, 1, -52, 15)
+
+[node name="Tail 3" type="Bone2D" parent="Skeleton2D/body1/body2/Tail 1/Tail 2"]
+position = Vector2(-77, 10)
+rest = Transform2D(1, 0, 0, 1, -77, 10)
+
+[node name="Tail 4" type="Bone2D" parent="Skeleton2D/body1/body2/Tail 1/Tail 2/Tail 3"]
+position = Vector2(-90, 0)
+rest = Transform2D(1, 0, 0, 1, -90, 0)
+
+[node name="Tail 5" type="Bone2D" parent="Skeleton2D/body1/body2/Tail 1/Tail 2/Tail 3/Tail 4"]
+position = Vector2(-95, -5)
+rest = Transform2D(1, 0, 0, 1, -95, -5)
+
+[node name="Tail 6" type="Bone2D" parent="Skeleton2D/body1/body2/Tail 1/Tail 2/Tail 3/Tail 4/Tail 5"]
+position = Vector2(-72, -9)
+rest = Transform2D(1, 0, 0, 1, -72, -9)
+auto_calculate_length_and_angle = false
+length = 99.106
+bone_angle = -168.679
+
+[node name="WHAT" type="Bone2D" parent="Skeleton2D"]
+rest = Transform2D(1, 0, 0, 1, 0, 0)
