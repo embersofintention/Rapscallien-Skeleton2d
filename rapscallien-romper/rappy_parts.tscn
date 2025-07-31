@@ -221,6 +221,9 @@ position = Vector2(131, 7)
 [node name="Ponytail target" type="Node2D" parent="IK Targets/Head Target"]
 position = Vector2(-269, 151)
 
+[node name="UpperBody target" type="Node2D" parent="IK Targets/Head Target"]
+position = Vector2(-33, 137)
+
 [node name="Tail Mid Target" type="Node2D" parent="IK Targets"]
 position = Vector2(-189, 6)
 
