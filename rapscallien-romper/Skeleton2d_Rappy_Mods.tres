@@ -55,7 +55,7 @@ joint_data/1/editor_draw_gizmo = true
 [sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_fg68g"]
 resource_name = "Foot F Lookat"
 enabled = false
-bone_index = 7
+bone_index = 14
 bone2d_node = NodePath("body1/body2/Leg F 1/Leg F 2/Foot F")
 target_nodepath = NodePath("../IK Targets/Leg F Target/Foot F Target")
 enable_constraint = true
@@ -92,7 +92,7 @@ joint_data/1/editor_draw_gizmo = true
 [sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_55ft4"]
 resource_name = "Hand F Lookat"
 enabled = false
-bone_index = 4
+bone_index = 11
 bone2d_node = NodePath("body1/body2/Arm F 1/Arm F 2/Hand F")
 target_nodepath = NodePath("../IK Targets/Arm F Target/Hand F Target")
 enable_constraint = true
