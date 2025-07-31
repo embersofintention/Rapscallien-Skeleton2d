@@ -130,10 +130,12 @@ bone_angle = -203.509
 [node name="Arm F 1" type="Bone2D" parent="Skeleton2D/body1/body2/body3"]
 position = Vector2(-72, -52)
 rest = Transform2D(1, 0, 0, 1, -72, -52)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Arm F 2" type="Bone2D" parent="Skeleton2D/body1/body2/body3/Arm F 1"]
 position = Vector2(-52, 67)
 rest = Transform2D(1, 0, 0, 1, -52, 67)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Hand F" type="Bone2D" parent="Skeleton2D/body1/body2/body3/Arm F 1/Arm F 2"]
 position = Vector2(1, 41)
@@ -141,26 +143,32 @@ rest = Transform2D(1, 0, 0, 1, 1, 41)
 auto_calculate_length_and_angle = false
 length = 71.298
 bone_angle = 71.351
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Tail 1" type="Bone2D" parent="Skeleton2D/body1/body2"]
 position = Vector2(-92, 18)
 rest = Transform2D(1, 0, 0, 1, -92, 18)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Tail 2" type="Bone2D" parent="Skeleton2D/body1/body2/Tail 1"]
 position = Vector2(-52, 15)
 rest = Transform2D(1, 0, 0, 1, -52, 15)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Tail 3" type="Bone2D" parent="Skeleton2D/body1/body2/Tail 1/Tail 2"]
 position = Vector2(-77, 10)
 rest = Transform2D(1, 0, 0, 1, -77, 10)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Tail 4" type="Bone2D" parent="Skeleton2D/body1/body2/Tail 1/Tail 2/Tail 3"]
 position = Vector2(-90, 0)
 rest = Transform2D(1, 0, 0, 1, -90, 0)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Tail 5" type="Bone2D" parent="Skeleton2D/body1/body2/Tail 1/Tail 2/Tail 3/Tail 4"]
 position = Vector2(-95, -5)
 rest = Transform2D(1, 0, 0, 1, -95, -5)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Tail 6" type="Bone2D" parent="Skeleton2D/body1/body2/Tail 1/Tail 2/Tail 3/Tail 4/Tail 5"]
 position = Vector2(-72, -9)
@@ -172,10 +180,12 @@ bone_angle = -168.679
 [node name="Leg F 1" type="Bone2D" parent="Skeleton2D/body1"]
 position = Vector2(-78, -45)
 rest = Transform2D(1, 0, 0, 1, -78, -45)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Leg F 2" type="Bone2D" parent="Skeleton2D/body1/Leg F 1"]
 position = Vector2(-4, 63)
 rest = Transform2D(1, 0, 0, 1, -4, 63)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Foot F" type="Bone2D" parent="Skeleton2D/body1/Leg F 1/Leg F 2"]
 position = Vector2(-11, 71)
@@ -183,6 +193,7 @@ rest = Transform2D(1, 0, 0, 1, -11, 71)
 auto_calculate_length_and_angle = false
 length = 89.73
 bone_angle = 0.0
+metadata/_local_pose_override_enabled_ = true
 
 [node name="WHAT" type="Bone2D" parent="Skeleton2D"]
 visible = false
@@ -191,16 +202,16 @@ rest = Transform2D(1, 0, 0, 1, 0, 0)
 [node name="IK Targets" type="Node2D" parent="."]
 
 [node name="Leg F Target" type="Node2D" parent="IK Targets"]
-position = Vector2(-8, -13)
+position = Vector2(1, 14)
 
 [node name="Foot F Target" type="Node2D" parent="IK Targets/Leg F Target"]
 position = Vector2(88, -3)
 
 [node name="Arm F Target" type="Node2D" parent="IK Targets"]
-position = Vector2(-47, -139)
+position = Vector2(-46, -131)
 
 [node name="Hand F Target" type="Node2D" parent="IK Targets/Arm F Target"]
-position = Vector2(-9, 51)
+position = Vector2(9, 76)
 
 [node name="UpperBody target" type="Node2D" parent="IK Targets"]
 position = Vector2(33, -286)
@@ -218,7 +229,7 @@ position = Vector2(131, 7)
 position = Vector2(-258, 184)
 
 [node name="Tail Mid Target" type="Node2D" parent="IK Targets"]
-position = Vector2(-189, 6)
+position = Vector2(-88, -75)
 
 [node name="Tail Tip target" type="Node2D" parent="IK Targets/Tail Mid Target"]
 position = Vector2(-263, -99)
