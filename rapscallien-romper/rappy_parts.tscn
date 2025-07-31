@@ -94,10 +94,12 @@ rest = Transform2D(1, 0, 0, 1, 2, -71)
 [node name="Arm F 1" type="Bone2D" parent="Skeleton2D/body1/body2"]
 position = Vector2(-75, -92)
 rest = Transform2D(1, 0, 0, 1, -75, -92)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Arm F 2" type="Bone2D" parent="Skeleton2D/body1/body2/Arm F 1"]
 position = Vector2(-52, 67)
 rest = Transform2D(1, 0, 0, 1, -52, 67)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Hand F" type="Bone2D" parent="Skeleton2D/body1/body2/Arm F 1/Arm F 2"]
 position = Vector2(1, 41)
@@ -105,6 +107,7 @@ rest = Transform2D(1, 0, 0, 1, 1, 41)
 auto_calculate_length_and_angle = false
 length = 71.298
 bone_angle = 71.351
+metadata/_local_pose_override_enabled_ = true
 
 [node name="neck" type="Bone2D" parent="Skeleton2D/body1/body2"]
 position = Vector2(-11, -98)
@@ -142,10 +145,12 @@ bone_angle = -188.108
 [node name="Leg F 1" type="Bone2D" parent="Skeleton2D/body1/body2"]
 position = Vector2(-83, 10)
 rest = Transform2D(1, 0, 0, 1, -83, 10)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Leg F 2" type="Bone2D" parent="Skeleton2D/body1/body2/Leg F 1"]
 position = Vector2(8, 63)
 rest = Transform2D(1, 0, 0, 1, 8, 63)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Foot F" type="Bone2D" parent="Skeleton2D/body1/body2/Leg F 1/Leg F 2"]
 position = Vector2(-11, 71)
@@ -153,14 +158,17 @@ rest = Transform2D(1, 0, 0, 1, -11, 71)
 auto_calculate_length_and_angle = false
 length = 89.73
 bone_angle = 0.0
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Tail 1" type="Bone2D" parent="Skeleton2D/body1/body2"]
 position = Vector2(-92, 18)
 rest = Transform2D(1, 0, 0, 1, -92, 18)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Tail 2" type="Bone2D" parent="Skeleton2D/body1/body2/Tail 1"]
 position = Vector2(-52, 15)
 rest = Transform2D(1, 0, 0, 1, -52, 15)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Tail 3" type="Bone2D" parent="Skeleton2D/body1/body2/Tail 1/Tail 2"]
 position = Vector2(-77, 10)
@@ -214,7 +222,7 @@ position = Vector2(131, 7)
 position = Vector2(-269, 151)
 
 [node name="Tail Mid Target" type="Node2D" parent="IK Targets"]
-position = Vector2(-229, -116)
+position = Vector2(-189, 6)
 
 [node name="Tail Tip target" type="Node2D" parent="IK Targets/Tail Mid Target"]
-position = Vector2(-312, -105)
+position = Vector2(-263, -99)
