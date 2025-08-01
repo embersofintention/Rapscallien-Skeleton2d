@@ -152,7 +152,7 @@ bone2d_node = NodePath("body1/Leg B 1/Leg B 2/Foot B")
 target_nodepath = NodePath("../IK Targets/Leg B Target/Foot B Target")
 enable_constraint = true
 constraint_angle_min = 61.395
-constraint_angle_max = 348.837
+constraint_angle_max = 320.322
 constraint_angle_invert = true
 constraint_in_localspace = true
 
@@ -163,7 +163,7 @@ bone2d_node = NodePath("body1/Leg F 1/Leg F 2/Foot F")
 target_nodepath = NodePath("../IK Targets/Leg F Target/Foot F Target")
 enable_constraint = true
 constraint_angle_min = 59.848
-constraint_angle_max = 325.904
+constraint_angle_max = 318.775
 constraint_angle_invert = true
 constraint_in_localspace = true
 
