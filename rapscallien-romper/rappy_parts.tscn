@@ -5,8 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://cm6q434sses54" path="res://Player Parts/head.png" id="2_qowsh"]
 [ext_resource type="Texture2D" uid="uid://hal2p4yogqmm" path="res://Player Parts/Tail 2.png" id="3_fg68g"]
 [ext_resource type="Texture2D" uid="uid://dgowoldh63i57" path="res://Player Parts/Arm.png" id="4_4pp56"]
-[ext_resource type="Texture2D" uid="uid://mu4siid5pf5y" path="res://Player Parts/Body.png" id="4_fg68g"]
 [ext_resource type="Texture2D" uid="uid://rn8wodtbqjuj" path="res://Player Parts/Arm B.png" id="4_kkup7"]
+[ext_resource type="Texture2D" uid="uid://dsf153y715qj3" path="res://Player Parts/Body2.png" id="6_kkup7"]
 [ext_resource type="Texture2D" uid="uid://7xh4mejwedm1" path="res://Player Parts/Leg 2.png" id="8_kkup7"]
 [ext_resource type="SkeletonModificationStack2D" uid="uid://dq8p1tdudynvg" path="res://Skeleton2d_Rappy_Mods r2.tres" id="9_kkup7"]
 
@@ -75,7 +75,7 @@ internal_vertex_count = 2
 
 [node name="Body1" type="Polygon2D" parent="POLYGONS"]
 position = Vector2(-105, -358)
-texture = ExtResource("4_fg68g")
+texture = ExtResource("6_kkup7")
 skeleton = NodePath("../../Skeleton2D")
 polygon = PackedVector2Array(71.5999, 47.3, 109, 9.89999, 197, 6.59999, 224.5, 45.1, 259.7, 63.8, 267.4, 106.7, 259.699, 152.799, 285, 205.7, 275.1, 255.2, 232.2, 290.4, 138.7, 295.9, 55.0999, 258.5, 20.7235, 214.416, 48.6514, 169.371, 41.9771, 126.101, 47.5417, 80.966, 178.3, 190.3, 165.1, 100.1)
 uv = PackedVector2Array(71.5999, 47.3, 109, 9.89999, 197, 6.59999, 224.5, 45.1, 259.7, 63.8, 267.4, 106.7, 259.699, 152.799, 285, 205.7, 275.1, 255.2, 232.2, 290.4, 138.7, 295.9, 55.0999, 258.5, 20.7235, 214.416, 48.6514, 169.371, 41.9771, 126.101, 47.5417, 80.966, 178.3, 190.3, 165.1, 100.1)
@@ -264,11 +264,13 @@ position = Vector2(19, -49)
 rotation = -0.115076
 scale = Vector2(0.999993, 0.999993)
 rest = Transform2D(0.993379, -0.114821, 0.114821, 0.993379, 19, -49)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Leg B 2" type="Bone2D" parent="Skeleton2D/body1/Leg B 1"]
 position = Vector2(-4.00001, 63.0003)
 rotation = 0.0557738
 rest = Transform2D(0.998445, 0.0557449, -0.0557449, 0.998445, -4.00001, 63.0003)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Foot B" type="Bone2D" parent="Skeleton2D/body1/Leg B 1/Leg B 2"]
 position = Vector2(-11, 71)
