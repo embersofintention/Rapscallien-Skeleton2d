@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dkoerdlvheddm"]
+[gd_scene load_steps=22 format=3 uid="uid://dkoerdlvheddm"]
 
 [ext_resource type="Texture2D" uid="uid://d33xujgdx3l3t" path="res://Player Parts/Hair.png" id="1_56ahy"]
 [ext_resource type="Script" uid="uid://bsbfacpwmw8m1" path="res://Scripts/rappy_parts_animations.gd" id="1_ix44y"]
@@ -10,10 +10,48 @@
 [ext_resource type="Texture2D" uid="uid://dsf153y715qj3" path="res://Player Parts/Body2.png" id="6_kkup7"]
 [ext_resource type="Texture2D" uid="uid://7xh4mejwedm1" path="res://Player Parts/Leg 2.png" id="8_kkup7"]
 [ext_resource type="SkeletonModificationStack2D" uid="uid://dq8p1tdudynvg" path="res://Skeleton2d_Rappy_Mods r2.tres" id="9_kkup7"]
-[ext_resource type="Script" uid="uid://b3bs3dii8s8dw" path="res://Tool Scripts/Refresh_Sk2d_Modifiers.gd" id="10_scx8j"]
 [ext_resource type="Animation" uid="uid://b22pgurotp1jj" path="res://animations/RESET.res" id="11_fifcm"]
 [ext_resource type="Texture2D" uid="uid://gkitx7w848tb" path="res://Player Parts/head blushy.png" id="13_fxwn5"]
 [ext_resource type="Texture2D" uid="uid://cw6ot5srr0ghc" path="res://Player Parts/head excite.png" id="14_b6j64"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s7pcq"]
+atlas = ExtResource("13_fxwn5")
+region = Rect2(0, 0, 367, 221)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ht3t"]
+atlas = ExtResource("2_qowsh")
+region = Rect2(0, 0, 367, 221)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehfrv"]
+atlas = ExtResource("14_b6j64")
+region = Rect2(0, 0, 367, 221)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pb8y6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s7pcq")
+}],
+"loop": true,
+"name": &"blush",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ht3t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehfrv")
+}],
+"loop": true,
+"name": &"excited",
+"speed": 5.0
+}]
 
 [sub_resource type="Animation" id="Animation_fifcm"]
 resource_name = "Idle1"
@@ -325,7 +363,6 @@ tracks/24/keys = {
 resource_name = "Strut1"
 length = 0.60001
 loop_mode = 1
-step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -976,45 +1013,6 @@ _data = {
 &"walk 1": SubResource("Animation_1lf87")
 }
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_s7pcq"]
-atlas = ExtResource("13_fxwn5")
-region = Rect2(0, 0, 367, 221)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7ht3t"]
-atlas = ExtResource("2_qowsh")
-region = Rect2(0, 0, 367, 221)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ehfrv"]
-atlas = ExtResource("14_b6j64")
-region = Rect2(0, 0, 367, 221)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_pb8y6"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_s7pcq")
-}],
-"loop": true,
-"name": &"blush",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7ht3t")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ehfrv")
-}],
-"loop": true,
-"name": &"excited",
-"speed": 5.0
-}]
-
 [node name="RappyParts" type="Node2D"]
 script = ExtResource("1_ix44y")
 
@@ -1023,12 +1021,6 @@ visible = false
 modulate = Color(1, 1, 1, 0.0666667)
 position = Vector2(-19, -198)
 texture = ExtResource("1_j7dim")
-
-[node name="AnimationSet" type="AnimationPlayer" parent="."]
-unique_name_in_owner = true
-libraries = {
-&"": SubResource("AnimationLibrary_1lf87")
-}
 
 [node name="ALL_PARTS" type="Node2D" parent="."]
 unique_name_in_owner = true
@@ -1124,17 +1116,16 @@ internal_vertex_count = 2
 
 [node name="Skeleton2D" type="Skeleton2D" parent="ALL_PARTS"]
 modification_stack = ExtResource("9_kkup7")
-script = ExtResource("10_scx8j")
 
 [node name="body1" type="Bone2D" parent="ALL_PARTS/Skeleton2D"]
 position = Vector2(78, -89)
-scale = Vector2(0.999829, 0.999829)
+scale = Vector2(0.999827, 0.999827)
 rest = Transform2D(1, 0, 0, 1, 78, -89)
 
 [node name="body2" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1"]
 position = Vector2(5.00045, -55.0025)
 rotation = 0.27376
-scale = Vector2(0.999897, 0.999897)
+scale = Vector2(0.999899, 0.999899)
 rest = Transform2D(1, 0, 0, 1, 5, -55)
 metadata/_local_pose_override_enabled_ = true
 
@@ -1202,7 +1193,8 @@ bone_angle = -45.405
 
 [node name="Arm B 1" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3"]
 position = Vector2(34.9889, -69.0087)
-scale = Vector2(0.999878, 0.999878)
+rotation = -1.24119
+scale = Vector2(0.999894, 0.999894)
 rest = Transform2D(0.371109, -0.928572, 0.928572, 0.371109, 35, -69)
 metadata/_local_pose_override_enabled_ = true
 
@@ -1221,8 +1213,8 @@ metadata/_local_pose_override_enabled_ = true
 
 [node name="Arm F 1" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3"]
 position = Vector2(-69.8182, -65.8789)
-rotation = -2.1481
-scale = Vector2(0.999845, 0.999845)
+rotation = -0.0754379
+scale = Vector2(0.999836, 0.999836)
 rest = Transform2D(0.998097, 0.0614022, -0.0614022, 0.998097, -69.8215, -65.8784)
 metadata/_local_pose_override_enabled_ = true
 
@@ -1273,8 +1265,8 @@ bone_angle = -168.679
 
 [node name="Leg F 1" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1"]
 position = Vector2(-78, -45)
-rotation = 1.06483
-scale = Vector2(0.999843, 0.999843)
+rotation = -0.149105
+scale = Vector2(0.999879, 0.999879)
 rest = Transform2D(1, 0, 0, 1, -78, -45)
 metadata/_local_pose_override_enabled_ = true
 
@@ -1293,8 +1285,8 @@ metadata/_local_pose_override_enabled_ = true
 
 [node name="Leg B 1" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1"]
 position = Vector2(19, -49)
-rotation = -1.67133
-scale = Vector2(0.999827, 0.999827)
+rotation = -0.352896
+scale = Vector2(0.999865, 0.999865)
 rest = Transform2D(0.993379, -0.114821, 0.114821, 0.993379, 19, -49)
 metadata/_local_pose_override_enabled_ = true
 
@@ -1366,3 +1358,10 @@ position = Vector2(-88, -75)
 
 [node name="Tail Tip target" type="Node2D" parent="ALL_PARTS/IK Targets/Tail Mid Target"]
 position = Vector2(-302, -118)
+
+[node name="AnimationSet" type="AnimationPlayer" parent="ALL_PARTS"]
+unique_name_in_owner = true
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_1lf87")
+}
