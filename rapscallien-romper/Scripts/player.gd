@@ -1,0 +1,45 @@
+extends CharacterBody2D
+
+# PLAYER CONTROL SCRIPT 
+# calls upon RappyParts for animations etc
+
+# Variables and Constants:
+var direction # Player direction -- 1=right, -1 = left
+const SPEED = 600 # base player movement speed
+
+@onready var rappy = %RappyParts # node with our animations and functions
+
+
+# Player Movement Logic Function
+func get_direction_and_velocity():
+	# get direction from player input
+	direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	# set player velocity (simple for now)
+	velocity = direction * SPEED
+	
+
+# Physics Process Stuff
+func _physics_process(delta: float) -> void:
+	get_direction_and_velocity()
+	
+	# Determining animation state (simple for now)
+	if velocity.length() == 0.0: # not moving
+		rappy.is_idle()
+	if velocity.length() > 0.0: # moving
+		rappy.is_running()
+		
+		
+	# apply movement
+	move_and_slide()
+	# apply animation speed
+	rappy.animation_player.speed_scale = rappy.anim_base_speed
+
+
+
+
+
+
+
+
+
+# :D
