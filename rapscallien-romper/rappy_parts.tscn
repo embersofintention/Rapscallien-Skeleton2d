@@ -114,13 +114,22 @@ rest = Transform2D(1, 0, 0, 1, 17, -114)
 [node name="ponytail1" type="Bone2D" parent="Skeleton2D/body1/body2/body3/neck/head/head2"]
 position = Vector2(-80, 73)
 rest = Transform2D(1, 0, 0, 1, -80, 73)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="ponytail2" type="Bone2D" parent="Skeleton2D/body1/body2/body3/neck/head/head2/ponytail1"]
 position = Vector2(-48, 40)
 rest = Transform2D(1, 0, 0, 1, -48, 40)
 auto_calculate_length_and_angle = false
-length = 161.143
+length = 84.555
 bone_angle = -203.509
+metadata/_local_pose_override_enabled_ = true
+
+[node name="ponytail tip" type="Bone2D" parent="Skeleton2D/body1/body2/body3/neck/head/head2/ponytail1/ponytail2"]
+position = Vector2(-85, 46.7769)
+rest = Transform2D(1, 0, 0, 1, -85, 46.7769)
+auto_calculate_length_and_angle = false
+length = 65.235
+bone_angle = 130.909
 
 [node name="ear f" type="Bone2D" parent="Skeleton2D/body1/body2/body3/neck/head/head2"]
 position = Vector2(-87, 36)
@@ -214,14 +223,14 @@ rest = Transform2D(1, 0, 0, 1, 0, 0)
 [node name="Head Target" type="Node2D" parent="IK Targets"]
 position = Vector2(66, -423)
 
+[node name="Ponytail target" type="Node2D" parent="IK Targets/Head Target"]
+position = Vector2(-186, 178)
+
 [node name="ear F target" type="Node2D" parent="IK Targets/Head Target"]
 position = Vector2(-172, -2)
 
 [node name="ear B target" type="Node2D" parent="IK Targets/Head Target"]
 position = Vector2(131, 7)
-
-[node name="Ponytail target" type="Node2D" parent="IK Targets/Head Target"]
-position = Vector2(-284, 206)
 
 [node name="UpperBody target" type="Node2D" parent="IK Targets"]
 position = Vector2(57, -302)
