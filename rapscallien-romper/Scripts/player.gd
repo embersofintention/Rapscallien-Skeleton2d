@@ -19,9 +19,8 @@ func determine_direction():
 	# Player faces direction
 	if direction: 
 		if velocity.x != 0 and velocity.y == 0: # if moving horizontally
-			rappy.all_parts.scale.x = direction.x
-		if velocity.y: # keeping scale.y from breaking lol
-			rappy.all_parts.scale.y = 1
+			rappy.all_parts.scale.x = sign(direction.x)
+		
 
 
 func determine_velocity(): 
