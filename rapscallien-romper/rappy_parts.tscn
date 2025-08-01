@@ -696,13 +696,13 @@ script = ExtResource("10_scx8j")
 
 [node name="body1" type="Bone2D" parent="Skeleton2D"]
 position = Vector2(78, -89)
-scale = Vector2(0.999932, 0.999932)
+scale = Vector2(0.999904, 0.999904)
 rest = Transform2D(1, 0, 0, 1, 78, -89)
 
 [node name="body2" type="Bone2D" parent="Skeleton2D/body1"]
 position = Vector2(5.00045, -55.0025)
 rotation = 0.27376
-scale = Vector2(0.999999, 0.999999)
+scale = Vector2(0.999995, 0.999995)
 rest = Transform2D(1, 0, 0, 1, 5, -55)
 metadata/_local_pose_override_enabled_ = true
 
@@ -763,8 +763,8 @@ bone_angle = -45.405
 
 [node name="Arm B 1" type="Bone2D" parent="Skeleton2D/body1/body2/body3"]
 position = Vector2(34.9889, -69.0087)
-rotation = -0.408755
-scale = Vector2(0.999926, 0.999926)
+rotation = -0.0432757
+scale = Vector2(0.999869, 0.999869)
 rest = Transform2D(0.371109, -0.928572, 0.928572, 0.371109, 35, -69)
 metadata/_local_pose_override_enabled_ = true
 
@@ -783,8 +783,8 @@ metadata/_local_pose_override_enabled_ = true
 
 [node name="Arm F 1" type="Bone2D" parent="Skeleton2D/body1/body2/body3"]
 position = Vector2(-69.8182, -65.8789)
-rotation = -0.725175
-scale = Vector2(0.999924, 0.999924)
+rotation = -1.91721
+scale = Vector2(0.999851, 0.999851)
 rest = Transform2D(0.998097, 0.0614022, -0.0614022, 0.998097, -69.8215, -65.8784)
 metadata/_local_pose_override_enabled_ = true
 
@@ -836,7 +836,7 @@ bone_angle = -168.679
 [node name="Leg F 1" type="Bone2D" parent="Skeleton2D/body1"]
 position = Vector2(-78, -45)
 rotation = 1.22599
-scale = Vector2(0.99999, 0.99999)
+scale = Vector2(0.999977, 0.999977)
 rest = Transform2D(1, 0, 0, 1, -78, -45)
 metadata/_local_pose_override_enabled_ = true
 
@@ -855,8 +855,8 @@ metadata/_local_pose_override_enabled_ = true
 
 [node name="Leg B 1" type="Bone2D" parent="Skeleton2D/body1"]
 position = Vector2(19, -49)
-rotation = -0.468015
-scale = Vector2(0.99997, 0.99997)
+rotation = -1.20549
+scale = Vector2(0.999928, 0.999928)
 rest = Transform2D(0.993379, -0.114821, 0.114821, 0.993379, 19, -49)
 metadata/_local_pose_override_enabled_ = true
 
