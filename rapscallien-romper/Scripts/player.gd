@@ -10,17 +10,32 @@ const SPEED = 600 # base player movement speed
 @onready var rappy = %RappyParts # node with our animations and functions
 
 
-# Player Movement Logic Function
-func get_direction_and_velocity():
+# MOVEMENT LOGIC FUNCTIONS: 
+
+func determine_direction():
 	# get direction from player input
 	direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	
+	# Player faces direction
+	if direction: 
+		if velocity.x != 0 and velocity.y == 0: # if moving horizontally
+			rappy.all_parts.scale.x = direction.x
+		if velocity.y: # keeping scale.y from breaking lol
+			rappy.all_parts.scale.y = 1
+
+
+func determine_velocity(): 
 	# set player velocity (simple for now)
 	velocity = direction * SPEED
-	
+
+
+
+
 
 # Physics Process Stuff
 func _physics_process(delta: float) -> void:
-	get_direction_and_velocity()
+	determine_direction()
+	determine_velocity()
 	
 	# Determining animation state (simple for now)
 	if velocity.length() == 0.0: # not moving
