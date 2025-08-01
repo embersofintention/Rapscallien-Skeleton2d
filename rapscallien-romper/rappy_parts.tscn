@@ -684,6 +684,7 @@ internal_vertex_count = 5
 [node name="Arm B" type="Polygon2D" parent="ALL PARTS/POLYGONS"]
 position = Vector2(110, -270)
 rotation = -1.03621
+color = Color(0.95158, 0.95158, 0.95158, 1)
 offset = Vector2(-144, -41)
 texture = ExtResource("4_kkup7")
 skeleton = NodePath("../../Skeleton2D")
@@ -696,6 +697,7 @@ internal_vertex_count = 2
 [node name="Leg B" type="Polygon2D" parent="ALL PARTS/POLYGONS"]
 position = Vector2(12, -169)
 rotation = -0.0340844
+color = Color(0.860369, 0.860369, 0.860369, 1)
 texture = ExtResource("8_kkup7")
 skeleton = NodePath("../../Skeleton2D")
 polygon = PackedVector2Array(144.87, 31.9934, 156.023, 51.1116, 166.784, 85.2697, 160.302, 110.203, 147.254, 125.027, 166.551, 150.584, 146.992, 173.257, 70.5174, 172.726, 3.03868, 153.885, 5.71751, 128.153, 12.6987, 106.212, 7.2135, 70.8073, 18.6827, 40.8877, 39.2508, 18.2198, 82.7021, 1.322, 122.774, 15.323, 85.0854, 95.7186, 79.5191, 121.172)
@@ -752,13 +754,13 @@ script = ExtResource("10_scx8j")
 
 [node name="body1" type="Bone2D" parent="ALL PARTS/Skeleton2D"]
 position = Vector2(78, -89)
-scale = Vector2(0.999836, 0.999836)
+scale = Vector2(0.999832, 0.999832)
 rest = Transform2D(1, 0, 0, 1, 78, -89)
 
 [node name="body2" type="Bone2D" parent="ALL PARTS/Skeleton2D/body1"]
 position = Vector2(5.00045, -55.0025)
 rotation = 0.27376
-scale = Vector2(0.999999, 0.999999)
+scale = Vector2(0.999993, 0.999993)
 rest = Transform2D(1, 0, 0, 1, 5, -55)
 metadata/_local_pose_override_enabled_ = true
 
@@ -819,8 +821,7 @@ bone_angle = -45.405
 
 [node name="Arm B 1" type="Bone2D" parent="ALL PARTS/Skeleton2D/body1/body2/body3"]
 position = Vector2(34.9889, -69.0087)
-rotation = -0.827694
-scale = Vector2(0.999899, 0.999899)
+scale = Vector2(0.999882, 0.999882)
 rest = Transform2D(0.371109, -0.928572, 0.928572, 0.371109, 35, -69)
 metadata/_local_pose_override_enabled_ = true
 
@@ -839,8 +840,8 @@ metadata/_local_pose_override_enabled_ = true
 
 [node name="Arm F 1" type="Bone2D" parent="ALL PARTS/Skeleton2D/body1/body2/body3"]
 position = Vector2(-69.8182, -65.8789)
-rotation = -0.215382
-scale = Vector2(0.999876, 0.999876)
+rotation = -2.13972
+scale = Vector2(0.999844, 0.999844)
 rest = Transform2D(0.998097, 0.0614022, -0.0614022, 0.998097, -69.8215, -65.8784)
 metadata/_local_pose_override_enabled_ = true
 
@@ -891,8 +892,8 @@ bone_angle = -168.679
 
 [node name="Leg F 1" type="Bone2D" parent="ALL PARTS/Skeleton2D/body1"]
 position = Vector2(-78, -45)
-rotation = -1.20189
-scale = Vector2(1.00006, 1.00006)
+rotation = 0.971819
+scale = Vector2(1.00001, 1.00001)
 rest = Transform2D(1, 0, 0, 1, -78, -45)
 metadata/_local_pose_override_enabled_ = true
 
@@ -911,8 +912,8 @@ metadata/_local_pose_override_enabled_ = true
 
 [node name="Leg B 1" type="Bone2D" parent="ALL PARTS/Skeleton2D/body1"]
 position = Vector2(19, -49)
-rotation = 0.653303
-scale = Vector2(0.999924, 0.999924)
+rotation = -0.644669
+scale = Vector2(0.999912, 0.999912)
 rest = Transform2D(0.993379, -0.114821, 0.114821, 0.993379, 19, -49)
 metadata/_local_pose_override_enabled_ = true
 
