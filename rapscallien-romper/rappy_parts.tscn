@@ -754,13 +754,13 @@ script = ExtResource("10_scx8j")
 
 [node name="body1" type="Bone2D" parent="ALL PARTS/Skeleton2D"]
 position = Vector2(78, -89)
-scale = Vector2(0.999832, 0.999832)
+scale = Vector2(0.999829, 0.999829)
 rest = Transform2D(1, 0, 0, 1, 78, -89)
 
 [node name="body2" type="Bone2D" parent="ALL PARTS/Skeleton2D/body1"]
 position = Vector2(5.00045, -55.0025)
 rotation = 0.27376
-scale = Vector2(0.999993, 0.999993)
+scale = Vector2(0.99991, 0.99991)
 rest = Transform2D(1, 0, 0, 1, 5, -55)
 metadata/_local_pose_override_enabled_ = true
 
@@ -821,7 +821,8 @@ bone_angle = -45.405
 
 [node name="Arm B 1" type="Bone2D" parent="ALL PARTS/Skeleton2D/body1/body2/body3"]
 position = Vector2(34.9889, -69.0087)
-scale = Vector2(0.999882, 0.999882)
+rotation = -1.23981
+scale = Vector2(0.999892, 0.999892)
 rest = Transform2D(0.371109, -0.928572, 0.928572, 0.371109, 35, -69)
 metadata/_local_pose_override_enabled_ = true
 
@@ -840,8 +841,8 @@ metadata/_local_pose_override_enabled_ = true
 
 [node name="Arm F 1" type="Bone2D" parent="ALL PARTS/Skeleton2D/body1/body2/body3"]
 position = Vector2(-69.8182, -65.8789)
-rotation = -2.13972
-scale = Vector2(0.999844, 0.999844)
+rotation = -0.0722726
+scale = Vector2(0.999895, 0.999895)
 rest = Transform2D(0.998097, 0.0614022, -0.0614022, 0.998097, -69.8215, -65.8784)
 metadata/_local_pose_override_enabled_ = true
 
@@ -892,8 +893,8 @@ bone_angle = -168.679
 
 [node name="Leg F 1" type="Bone2D" parent="ALL PARTS/Skeleton2D/body1"]
 position = Vector2(-78, -45)
-rotation = 0.971819
-scale = Vector2(1.00001, 1.00001)
+rotation = -0.149121
+scale = Vector2(0.999809, 0.999809)
 rest = Transform2D(1, 0, 0, 1, -78, -45)
 metadata/_local_pose_override_enabled_ = true
 
@@ -912,8 +913,8 @@ metadata/_local_pose_override_enabled_ = true
 
 [node name="Leg B 1" type="Bone2D" parent="ALL PARTS/Skeleton2D/body1"]
 position = Vector2(19, -49)
-rotation = -0.644669
-scale = Vector2(0.999912, 0.999912)
+rotation = -0.353381
+scale = Vector2(0.999802, 0.999802)
 rest = Transform2D(0.993379, -0.114821, 0.114821, 0.993379, 19, -49)
 metadata/_local_pose_override_enabled_ = true
 
