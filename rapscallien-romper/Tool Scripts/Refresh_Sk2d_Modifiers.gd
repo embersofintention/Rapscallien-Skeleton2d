@@ -1,7 +1,16 @@
 @tool
 extends Skeleton2D
 
+# Add a toggle to the inspector
+@export var refresh_mods: bool = false:
+	set(value):
+		if value: 
+			_rebind_modifications()
+			# uncheck automatically in editor
+			refresh_mods = false
+
 const EXECUTION_MODE_PROCESS = 0
+
 
 func _rebind_modifications():
 	var mod_stack = self.get_modification_stack()
