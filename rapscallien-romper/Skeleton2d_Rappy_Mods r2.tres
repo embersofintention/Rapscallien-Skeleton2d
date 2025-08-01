@@ -252,7 +252,6 @@ joint_data/1/editor_draw_gizmo = true
 
 [resource]
 resource_name = "Rappy Skeleton2d mods"
-enabled = true
 modification_count = 14
 modifications/0 = ExtResource("1_7y8tk")
 modifications/1 = SubResource("SkeletonModification2DCCDIK_wua6k")
