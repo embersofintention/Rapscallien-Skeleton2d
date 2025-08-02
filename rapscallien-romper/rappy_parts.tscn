@@ -14,6 +14,45 @@
 [ext_resource type="Texture2D" uid="uid://gkitx7w848tb" path="res://Player Parts/head blushy.png" id="13_fxwn5"]
 [ext_resource type="Texture2D" uid="uid://cw6ot5srr0ghc" path="res://Player Parts/head excite.png" id="14_b6j64"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_s7pcq"]
+atlas = ExtResource("13_fxwn5")
+region = Rect2(0, 0, 367, 221)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ht3t"]
+atlas = ExtResource("2_qowsh")
+region = Rect2(0, 0, 367, 221)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehfrv"]
+atlas = ExtResource("14_b6j64")
+region = Rect2(0, 0, 367, 221)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pb8y6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s7pcq")
+}],
+"loop": true,
+"name": &"blush",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ht3t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehfrv")
+}],
+"loop": true,
+"name": &"excited",
+"speed": 5.0
+}]
+
 [sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_ix44y"]
 resource_name = "head lookat"
 bone_index = 11
@@ -59,45 +98,6 @@ modification_count = 3
 modifications/0 = SubResource("SkeletonModification2DLookAt_ix44y")
 modifications/1 = SubResource("SkeletonModification2DCCDIK_ix44y")
 modifications/2 = SubResource("SkeletonModification2DTwoBoneIK_fifcm")
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_s7pcq"]
-atlas = ExtResource("13_fxwn5")
-region = Rect2(0, 0, 367, 221)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7ht3t"]
-atlas = ExtResource("2_qowsh")
-region = Rect2(0, 0, 367, 221)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ehfrv"]
-atlas = ExtResource("14_b6j64")
-region = Rect2(0, 0, 367, 221)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_pb8y6"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_s7pcq")
-}],
-"loop": true,
-"name": &"blush",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7ht3t")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ehfrv")
-}],
-"loop": true,
-"name": &"excited",
-"speed": 5.0
-}]
 
 [sub_resource type="Animation" id="Animation_fifcm"]
 resource_name = "Idle1"
@@ -1637,6 +1637,13 @@ polygons = [PackedInt32Array(21, 0, 1), PackedInt32Array(21, 1, 2), PackedInt32A
 bones = ["body1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/body3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/body3/neck", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/body3/neck/head", PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), "body1/body2/body3/neck/head/head2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/body3/neck/head/head2/ponytail1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/body3/neck/head/head2/ponytail1/ponytail2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/body3/neck/head/head2/ear f", PackedFloat32Array(0, 0.22, 1, 1, 1, 0.22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/body3/neck/head/head2/ear b", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.53, 1, 1, 0.47, 0, 0, 0, 0, 0), "body1/body2/body3/Arm F 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/body3/Arm F 1/Arm F 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/body3/Arm F 1/Arm F 2/Hand F", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1/Tail 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1/Tail 2/Tail 3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1/Tail 2/Tail 3/Tail 4", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1/Tail 2/Tail 3/Tail 4/Tail 5", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/body2/Tail 1/Tail 2/Tail 3/Tail 4/Tail 5/Tail 6", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/Leg F 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/Leg F 1/Leg F 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "body1/Leg F 1/Leg F 2/Foot F", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "WHAT", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
 internal_vertex_count = 2
 
+[node name="Faces" type="AnimatedSprite2D" parent="ALL_PARTS/POLYGONS"]
+unique_name_in_owner = true
+position = Vector2(37, -308)
+rotation = 0.0600654
+scale = Vector2(1.00068, 1.00068)
+sprite_frames = SubResource("SpriteFrames_pb8y6")
+
 [node name="Skeleton2D" type="Skeleton2D" parent="ALL_PARTS"]
 unique_name_in_owner = true
 modification_stack = SubResource("SkeletonModificationStack2D_ix44y")
@@ -1704,21 +1711,20 @@ length = 62.081
 bone_angle = -45.405
 
 [node name="head point" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head/head2"]
-position = Vector2(-12.0002, 68.7753)
-rotation = 0.115388
-scale = Vector2(1, 1)
+position = Vector2(-19.2754, 85.1596)
+rotation = 0.102458
+scale = Vector2(1.00034, 1.00034)
 rest = Transform2D(1, 0, 0, 1, -12.1089, 68.6893)
 auto_calculate_length_and_angle = false
 length = 191.059
 bone_angle = 0.0
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Faces" type="AnimatedSprite2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head/head2/head point"]
-unique_name_in_owner = true
-position = Vector2(-8.47047, 15.7996)
+[node name="face_remote" type="RemoteTransform2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head/head2/head point"]
+position = Vector2(-7.61699, 15.8313)
 rotation = 0.176701
 scale = Vector2(1.00034, 1.00034)
-sprite_frames = SubResource("SpriteFrames_pb8y6")
+remote_path = NodePath("../../../../../../../../../POLYGONS/Faces")
 
 [node name="Arm B 1" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3"]
 position = Vector2(35, -69)
