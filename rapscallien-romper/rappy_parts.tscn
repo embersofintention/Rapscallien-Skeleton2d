@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dkoerdlvheddm"]
+[gd_scene load_steps=24 format=3 uid="uid://dkoerdlvheddm"]
 
 [ext_resource type="Texture2D" uid="uid://d33xujgdx3l3t" path="res://Player Parts/Hair.png" id="1_56ahy"]
 [ext_resource type="Script" uid="uid://bsbfacpwmw8m1" path="res://Scripts/rappy_parts_animations.gd" id="1_ix44y"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dsf153y715qj3" path="res://Player Parts/Body2.png" id="6_kkup7"]
 [ext_resource type="Texture2D" uid="uid://7xh4mejwedm1" path="res://Player Parts/Leg 2.png" id="8_kkup7"]
 [ext_resource type="Animation" uid="uid://b22pgurotp1jj" path="res://animations/RESET.res" id="11_fifcm"]
+[ext_resource type="PackedScene" uid="uid://dvnquttodk0wx" path="res://cursor.tscn" id="13_fifcm"]
 [ext_resource type="Texture2D" uid="uid://gkitx7w848tb" path="res://Player Parts/head blushy.png" id="13_fxwn5"]
 [ext_resource type="Texture2D" uid="uid://cw6ot5srr0ghc" path="res://Player Parts/head excite.png" id="14_b6j64"]
 
@@ -17,7 +18,7 @@
 resource_name = "head lookat"
 bone_index = 11
 bone2d_node = NodePath("body1/body2/body3/neck/head/head2/head point")
-target_nodepath = NodePath("/root/Main/Cursor")
+target_nodepath = NodePath("../../CanvasLayer/Cursor")
 enable_constraint = true
 constraint_angle_min = 42.667
 constraint_angle_max = 296.0
@@ -1697,6 +1698,7 @@ rest = Transform2D(1, 0, 0, 1, -12.1089, 68.6893)
 auto_calculate_length_and_angle = false
 length = 191.059
 bone_angle = 0.0
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Faces" type="AnimatedSprite2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head/head2/head point"]
 unique_name_in_owner = true
@@ -1884,3 +1886,8 @@ root_node = NodePath("../..")
 libraries = {
 &"": SubResource("AnimationLibrary_1lf87")
 }
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Cursor" parent="CanvasLayer" instance=ExtResource("13_fifcm")]
+position = Vector2(421, -298)
