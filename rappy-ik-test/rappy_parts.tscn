@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://bnpe2k1pniqtr"]
+[gd_scene load_steps=31 format=3 uid="uid://bnpe2k1pniqtr"]
 
 [ext_resource type="Texture2D" uid="uid://d33xujgdx3l3t" path="res://Player Parts/Hair.png" id="1_56ahy"]
 [ext_resource type="Script" uid="uid://bsbfacpwmw8m1" path="res://Scripts/rappy_parts_animations.gd" id="1_ix44y"]
@@ -18,6 +18,7 @@
 [ext_resource type="Script" uid="uid://dyxlgf4jvm6c" path="res://addons/soupik/resources/zm_constraint_data.gd" id="12_pb8y6"]
 [ext_resource type="Texture2D" uid="uid://gkitx7w848tb" path="res://Player Parts/head blushy.png" id="13_fxwn5"]
 [ext_resource type="Texture2D" uid="uid://cw6ot5srr0ghc" path="res://Player Parts/head excite.png" id="14_b6j64"]
+[ext_resource type="Script" uid="uid://crqqjfhpsvx7c" path="res://addons/soupik/utility/armature_generator.gd" id="15_443xt"]
 [ext_resource type="PackedScene" uid="uid://cewaboy7rpfnq" path="res://cursor.tscn" id="16_s7pcq"]
 
 [sub_resource type="Resource" id="Resource_443xt"]
@@ -1696,21 +1697,21 @@ auto_calculate_length_and_angle = false
 length = 191.059
 bone_angle = 0.0
 
-[node name="soup head point" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head/head2"]
-position = Vector2(-9.00026, 68.7749)
+[node name="soup head point" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head"]
+position = Vector2(7.99974, -45.2251)
 rest = Transform2D(1, 0, 0, 1, -9.00026, 68.7749)
 auto_calculate_length_and_angle = false
 length = 183.4
 bone_angle = 0.0
 script = ExtResource("9_b6j64")
-target_position = Vector2(-9.00026, 68.7749)
-ease_rotation = true
+target_rotation = -1.31049
+target_position = Vector2(7.99974, -45.2251)
 rotation_easing_params = SubResource("Resource_dq3ag")
 limit_rotation = true
 constraint_data = SubResource("Resource_1en7s")
 metadata/_custom_type_script = "uid://d4jgplvij3f3b"
 
-[node name="Faces" type="AnimatedSprite2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head/head2/soup head point"]
+[node name="Faces" type="AnimatedSprite2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head/soup head point"]
 unique_name_in_owner = true
 position = Vector2(-11.4704, 15.8)
 rotation = 0.176701
@@ -1832,16 +1833,22 @@ auto_calculate_length_and_angle = false
 length = 16.0
 bone_angle = 0.0
 
-[node name="SoupGroup" type="Node" parent="ALL_PARTS/Skeleton2D"]
+[node name="SoupArmatureGenerator" type="Node" parent="ALL_PARTS/Skeleton2D" node_paths=PackedStringArray("skeleton", "sprite_root")]
+script = ExtResource("15_443xt")
+skeleton = NodePath("..")
+sprite_root = NodePath("../../POLYGONS")
+metadata/_custom_type_script = "uid://crqqjfhpsvx7c"
+
+[node name="SoupHead" type="Node" parent="ALL_PARTS/Skeleton2D/SoupArmatureGenerator"]
 script = ExtResource("11_fxwn5")
 metadata/_custom_type_script = "uid://rtawbcq4j76w"
 
-[node name="SoupLookAt" type="Node" parent="ALL_PARTS/Skeleton2D/SoupGroup" node_paths=PackedStringArray("target_node", "bone_node")]
+[node name="SoupLookAt" type="Node" parent="ALL_PARTS/Skeleton2D/SoupArmatureGenerator/SoupHead" node_paths=PackedStringArray("target_node", "bone_node")]
 script = ExtResource("12_b6j64")
-target_node = NodePath("../../../../CanvasLayer/Cursor")
+target_node = NodePath("../../../../../CanvasLayer/Cursor")
 enabled = true
 angle_offset_degrees = -90.0
-bone_node = NodePath("../../body1/body2/body3/neck/head")
+bone_node = NodePath("../../../body1/body2/body3/neck/head/soup head point")
 metadata/_custom_type_script = "uid://noxrubjluwyx"
 
 [node name="Arm F" type="Polygon2D" parent="ALL_PARTS"]
