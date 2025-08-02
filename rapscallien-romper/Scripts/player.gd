@@ -9,6 +9,8 @@ const SPEED = 600 # base player movement speed
 
 @onready var rappy = %RappyParts # node with our animations and functions
 
+func _ready() -> void:
+	rappy.is_idle()
 
 # MOVEMENT LOGIC FUNCTIONS: 
 
@@ -21,7 +23,6 @@ func determine_direction():
 		if velocity.x != 0 and velocity.y == 0: # if moving horizontally
 			rappy.all_parts.scale.x = sign(direction.x)
 		
-
 func determine_velocity(): 
 	# set player velocity (simple for now)
 	velocity = direction * SPEED
