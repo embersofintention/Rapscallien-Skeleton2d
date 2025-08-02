@@ -1692,7 +1692,7 @@ length = 62.081
 bone_angle = -45.405
 
 [node name="head point" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head/head2"]
-position = Vector2(-12.1089, 68.6893)
+position = Vector2(-12.0002, 68.7753)
 rest = Transform2D(1, 0, 0, 1, -12.1089, 68.6893)
 auto_calculate_length_and_angle = false
 length = 191.059
