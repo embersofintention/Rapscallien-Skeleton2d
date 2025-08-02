@@ -9,4 +9,6 @@
 position = Vector2(459, 406)
 
 [node name="Cursor" parent="." instance=ExtResource("2_h2yge")]
+unique_name_in_owner = true
+visible = false
 position = Vector2(882, 322)
