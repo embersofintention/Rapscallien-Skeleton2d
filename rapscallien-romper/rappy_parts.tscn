@@ -1633,18 +1633,15 @@ position = Vector2(78, -89)
 rest = Transform2D(1, 0, 0, 1, 78, -89)
 
 [node name="body2" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1"]
-position = Vector2(5.00045, -55.0025)
-rotation = 0.27376
+position = Vector2(5, -55)
 rest = Transform2D(1, 0, 0, 1, 5, -55)
 
 [node name="body3" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2"]
-position = Vector2(-9.00055, -50)
-rotation = -0.281849
+position = Vector2(-9, -50)
 rest = Transform2D(1, 0, 0, 1, -9, -50)
 
 [node name="neck" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3"]
-position = Vector2(5.36334, -51.5114)
-rotation = 0.838829
+position = Vector2(-5, -64)
 rest = Transform2D(1, 0, 0, 1, -5, -64)
 
 [node name="head" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck"]
@@ -1664,13 +1661,11 @@ scale = Vector2(1.00034, 1.00034)
 sprite_frames = SubResource("SpriteFrames_pb8y6")
 
 [node name="ponytail1" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head/head2"]
-position = Vector2(-79.9077, 73.1306)
-rotation = -0.214815
+position = Vector2(-80, 73)
 rest = Transform2D(1, 0, 0, 1, -80, 73)
 
 [node name="ponytail2" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head/head2/ponytail1"]
-position = Vector2(-48.0102, 39.9848)
-rotation = 0.124609
+position = Vector2(-48, 40)
 rest = Transform2D(1, 0, 0, 1, -48, 40)
 auto_calculate_length_and_angle = false
 length = 84.555
@@ -1698,66 +1693,57 @@ length = 62.081
 bone_angle = -45.405
 
 [node name="Arm B 1" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3"]
-position = Vector2(34.9889, -69.0087)
-rotation = -1.23626
+position = Vector2(35, -69)
+rotation = -1.19059
 scale = Vector2(0.999984, 0.999984)
 rest = Transform2D(0.371109, -0.928572, 0.928572, 0.371109, 35, -69)
 
 [node name="Arm B2" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/Arm B 1"]
-position = Vector2(-51.998, 66.9978)
-rotation = 0.214815
+position = Vector2(-52, 67)
 rest = Transform2D(1, 0, 0, 1, -52, 67)
 
 [node name="Hand B" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/Arm B 1/Arm B2"]
-position = Vector2(0.999146, 40.9994)
-rotation = 0.0679453
+position = Vector2(1, 41)
 rest = Transform2D(1, 0, 0, 1, 1, 41)
 auto_calculate_length_and_angle = false
 length = 71.298
 bone_angle = 71.351
 
 [node name="Arm F 1" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3"]
-position = Vector2(-69.8182, -65.8789)
-rotation = -0.0182636
+position = Vector2(-69.8215, -65.8784)
+rotation = 0.0614418
 scale = Vector2(0.999984, 0.999984)
 rest = Transform2D(0.998097, 0.0614022, -0.0614022, 0.998097, -69.8215, -65.8784)
 
 [node name="Arm F 2" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/Arm F 1"]
-position = Vector2(-52.0004, 66.9955)
-rotation = -0.112744
+position = Vector2(-52, 67)
 rest = Transform2D(1, 0, 0, 1, -52, 67)
 
 [node name="Hand F" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/Arm F 1/Arm F 2"]
-position = Vector2(0.99929, 41.002)
-rotation = 0.488808
+position = Vector2(1, 41)
 rest = Transform2D(1, 0, 0, 1, 1, 41)
 auto_calculate_length_and_angle = false
 length = 71.298
 bone_angle = 71.351
 
 [node name="Tail 1" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2"]
-position = Vector2(-92.0001, 18.0002)
-rotation = -0.429612
+position = Vector2(-92, 18)
 rest = Transform2D(1, 0, 0, 1, -92, 18)
 
 [node name="Tail 2" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/Tail 1"]
-position = Vector2(-52.0019, 15.0005)
-rotation = -0.429612
+position = Vector2(-52, 15)
 rest = Transform2D(1, 0, 0, 1, -52, 15)
 
 [node name="Tail 3" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/Tail 1/Tail 2"]
-position = Vector2(-77.0016, 10.0009)
-rotation = 0.429613
+position = Vector2(-77, 10)
 rest = Transform2D(1, 0, 0, 1, -77, 10)
 
 [node name="Tail 4" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/Tail 1/Tail 2/Tail 3"]
-position = Vector2(-90.0013, -0.000534058)
-rotation = 0.46342
+position = Vector2(-90, 0)
 rest = Transform2D(1, 0, 0, 1, -90, 0)
 
 [node name="Tail 5" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/Tail 1/Tail 2/Tail 3/Tail 4"]
-position = Vector2(-95.0014, -5.00036)
-rotation = 0.914897
+position = Vector2(-95, -5)
 rest = Transform2D(1, 0, 0, 1, -95, -5)
 
 [node name="Tail 6" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/Tail 1/Tail 2/Tail 3/Tail 4/Tail 5"]
@@ -1769,17 +1755,14 @@ bone_angle = -168.679
 
 [node name="Leg F 1" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1"]
 position = Vector2(-78, -45)
-rotation = -0.149105
 rest = Transform2D(1, 0, 0, 1, -78, -45)
 
 [node name="Leg F 2" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/Leg F 1"]
-position = Vector2(-4.00014, 63.0008)
-rotation = 0.253142
+position = Vector2(-4.00001, 63.0003)
 rest = Transform2D(1, 0, 0, 1, -4.00001, 63.0003)
 
 [node name="Foot F" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/Leg F 1/Leg F 2"]
-position = Vector2(-11.0002, 71.0004)
-rotation = -0.00988609
+position = Vector2(-11, 71)
 rest = Transform2D(1, 0, 0, 1, -11, 71)
 auto_calculate_length_and_angle = false
 length = 89.73
@@ -1787,18 +1770,19 @@ bone_angle = 0.0
 
 [node name="Leg B 1" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1"]
 position = Vector2(19, -49)
-rotation = -0.352896
+rotation = -0.115076
 scale = Vector2(0.999993, 0.999993)
 rest = Transform2D(0.993379, -0.114821, 0.114821, 0.993379, 19, -49)
 
 [node name="Leg B 2" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/Leg B 1"]
-position = Vector2(-3.99947, 62.998)
+position = Vector2(-4.00001, 63.0003)
+rotation = 0.0557738
 scale = Vector2(1, 1)
 rest = Transform2D(0.998445, 0.0557449, -0.0557449, 0.998445, -4.00001, 63.0003)
 
 [node name="Foot B" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/Leg B 1/Leg B 2"]
-position = Vector2(-11.0003, 70.9997)
-rotation = 0.680797
+position = Vector2(-11, 71)
+rotation = 0.104591
 scale = Vector2(0.999999, 0.999999)
 rest = Transform2D(0.994534, 0.1044, -0.1044, 0.994534, -11, 71)
 auto_calculate_length_and_angle = false
