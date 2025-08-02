@@ -35,7 +35,7 @@ func head_looks_at_mouse():
 func _physics_process(delta: float) -> void:
 	determine_direction()
 	determine_velocity()
-	head_looks_at_mouse()
+	#head_looks_at_mouse()
 	
 	# Determining animation state (simple for now)
 	if velocity.length() == 0.0: # not moving
