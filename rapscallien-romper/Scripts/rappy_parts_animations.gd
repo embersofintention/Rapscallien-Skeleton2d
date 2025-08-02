@@ -11,7 +11,7 @@ var current_face := "" # Storage for Face Swap
 var anim_base_speed = 1.0 # animation playback speed; default = 1
 
 @onready var all_parts = %ALL_PARTS # contains polygons, skeleton, IK targets and faces
-@onready var head = %head
+
 
 @onready var animation_player = %AnimationSet # AnimationPlayer node reference
 	# ANIM LIST: 
@@ -46,7 +46,7 @@ func is_idle():
 
 func is_running():
 	change_animation("run 1")
-	change_face("excited")
+	change_face("blush")
 	anim_base_speed = 2
 
 
