@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://dkoerdlvheddm"]
+[gd_scene load_steps=25 format=3 uid="uid://dkoerdlvheddm"]
 
 [ext_resource type="Texture2D" uid="uid://d33xujgdx3l3t" path="res://Player Parts/Hair.png" id="1_56ahy"]
 [ext_resource type="Script" uid="uid://bsbfacpwmw8m1" path="res://Scripts/rappy_parts_animations.gd" id="1_ix44y"]
@@ -16,6 +16,7 @@
 
 [sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_ix44y"]
 resource_name = "head lookat"
+enabled = false
 bone_index = 11
 bone2d_node = NodePath("body1/body2/body3/neck/head/head2/head point")
 target_nodepath = NodePath("../../CanvasLayer/Cursor")
@@ -27,8 +28,7 @@ constraint_in_localspace = true
 
 [sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_ix44y"]
 resource_name = "head IK follow"
-enabled = false
-target_nodepath = NodePath("/root/Main/Cursor")
+target_nodepath = NodePath("body1/body2/body3/neck/head/head2/head point")
 tip_nodepath = NodePath("body1/body2/body3/neck/head/head2/head point")
 ccdik_data_chain_length = 2
 joint_data/0/bone_index = 3
@@ -42,12 +42,23 @@ joint_data/1/rotate_from_joint = false
 joint_data/1/enable_constraint = false
 joint_data/1/editor_draw_gizmo = true
 
+[sub_resource type="SkeletonModification2DTwoBoneIK" id="SkeletonModification2DTwoBoneIK_fifcm"]
+resource_name = "head 2bone ik"
+enabled = false
+target_nodepath = NodePath("../../CanvasLayer/Cursor")
+target_maximum_distance = 250.0
+joint_one_bone_idx = 3
+joint_one_bone2d_node = NodePath("body1/body2/body3/neck")
+joint_two_bone_idx = 4
+joint_two_bone2d_node = NodePath("body1/body2/body3/neck/head")
+
 [sub_resource type="SkeletonModificationStack2D" id="SkeletonModificationStack2D_ix44y"]
 resource_name = "details"
 enabled = true
-modification_count = 2
+modification_count = 3
 modifications/0 = SubResource("SkeletonModification2DLookAt_ix44y")
 modifications/1 = SubResource("SkeletonModification2DCCDIK_ix44y")
+modifications/2 = SubResource("SkeletonModification2DTwoBoneIK_fifcm")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s7pcq"]
 atlas = ExtResource("13_fxwn5")
@@ -1649,11 +1660,13 @@ rest = Transform2D(0.999999, 0, 0, 0.999999, -9, -50)
 position = Vector2(-5, -64)
 scale = Vector2(0.999999, 0.999999)
 rest = Transform2D(1, 0, 0, 1, -5, -64)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="head" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck"]
 unique_name_in_owner = true
 position = Vector2(-24, -37.7769)
 rest = Transform2D(1, 0, 0, 1, -24, -37.7769)
+metadata/_local_pose_override_enabled_ = true
 
 [node name="head2" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head"]
 position = Vector2(17, -114)
@@ -1694,11 +1707,12 @@ bone_angle = -45.405
 
 [node name="head point" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head/head2"]
 position = Vector2(-12.0002, 68.7753)
+rotation = 0.115388
+scale = Vector2(1, 1)
 rest = Transform2D(1, 0, 0, 1, -12.1089, 68.6893)
 auto_calculate_length_and_angle = false
 length = 191.059
 bone_angle = 0.0
-metadata/_local_pose_override_enabled_ = true
 
 [node name="Faces" type="AnimatedSprite2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head/head2/head point"]
 unique_name_in_owner = true
@@ -1810,7 +1824,7 @@ rest = Transform2D(0.998442, 0.0557448, -0.0557448, 0.998442, -4.00001, 63.0003)
 [node name="Foot B" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/Leg B 1/Leg B 2"]
 position = Vector2(-11, 71)
 rotation = 0.104591
-scale = Vector2(0.999996, 0.999996)
+scale = Vector2(0.999995, 0.999995)
 rest = Transform2D(0.994532, 0.1044, -0.1044, 0.994532, -11, 71)
 auto_calculate_length_and_angle = false
 length = 89.73
@@ -1890,4 +1904,4 @@ libraries = {
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Cursor" parent="CanvasLayer" instance=ExtResource("13_fifcm")]
-position = Vector2(421, -298)
+position = Vector2(413, -368)
