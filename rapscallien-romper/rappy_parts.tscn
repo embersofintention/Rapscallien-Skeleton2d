@@ -16,7 +16,6 @@
 
 [sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_ix44y"]
 resource_name = "head lookat"
-enabled = false
 bone_index = 11
 bone2d_node = NodePath("body1/body2/body3/neck/head/head2/head point")
 target_nodepath = NodePath("../../CanvasLayer/Cursor")
@@ -28,7 +27,8 @@ constraint_in_localspace = true
 
 [sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_ix44y"]
 resource_name = "head IK follow"
-target_nodepath = NodePath("body1/body2/body3/neck/head/head2/head point")
+enabled = false
+target_nodepath = NodePath("../../CanvasLayer/Cursor")
 tip_nodepath = NodePath("body1/body2/body3/neck/head/head2/head point")
 ccdik_data_chain_length = 2
 joint_data/0/bone_index = 3
@@ -47,10 +47,10 @@ resource_name = "head 2bone ik"
 enabled = false
 target_nodepath = NodePath("../../CanvasLayer/Cursor")
 target_maximum_distance = 250.0
-joint_one_bone_idx = 3
-joint_one_bone2d_node = NodePath("body1/body2/body3/neck")
-joint_two_bone_idx = 4
-joint_two_bone2d_node = NodePath("body1/body2/body3/neck/head")
+joint_one_bone_idx = 4
+joint_one_bone2d_node = NodePath("body1/body2/body3/neck/head")
+joint_two_bone_idx = 11
+joint_two_bone2d_node = NodePath("body1/body2/body3/neck/head/head2/head point")
 
 [sub_resource type="SkeletonModificationStack2D" id="SkeletonModificationStack2D_ix44y"]
 resource_name = "details"
@@ -1660,13 +1660,11 @@ rest = Transform2D(0.999999, 0, 0, 0.999999, -9, -50)
 position = Vector2(-5, -64)
 scale = Vector2(0.999999, 0.999999)
 rest = Transform2D(1, 0, 0, 1, -5, -64)
-metadata/_local_pose_override_enabled_ = true
 
 [node name="head" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck"]
 unique_name_in_owner = true
 position = Vector2(-24, -37.7769)
 rest = Transform2D(1, 0, 0, 1, -24, -37.7769)
-metadata/_local_pose_override_enabled_ = true
 
 [node name="head2" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head"]
 position = Vector2(17, -114)
@@ -1713,6 +1711,7 @@ rest = Transform2D(1, 0, 0, 1, -12.1089, 68.6893)
 auto_calculate_length_and_angle = false
 length = 191.059
 bone_angle = 0.0
+metadata/_local_pose_override_enabled_ = true
 
 [node name="Faces" type="AnimatedSprite2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head/head2/head point"]
 unique_name_in_owner = true
