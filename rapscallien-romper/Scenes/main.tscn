@@ -1,23 +1,33 @@
-[gd_scene load_steps=4 format=3 uid="uid://c80gcb3iawbrq"]
+[gd_scene load_steps=5 format=3 uid="uid://c80gcb3iawbrq"]
 
 [ext_resource type="Texture2D" uid="uid://wwn4hos6xs75" path="res://BGs/paper bg tileable.png" id="1_8gbba"]
 [ext_resource type="PackedScene" uid="uid://d4ah0qwm51owd" path="res://Scenes/player.tscn" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://dvnquttodk0wx" path="res://cursor.tscn" id="2_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://5m1x1642u5p0" path="res://Scenes/crumpled_paper.tscn" id="4_jjvhh"]
 
 [node name="Main" type="Node2D"]
+y_sort_enabled = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
+visible = false
 offset_right = 1500.0
 offset_bottom = 1500.0
 scale = Vector2(0.801211, 0.582775)
 texture = ExtResource("1_8gbba")
-stretch_mode = 1
+stretch_mode = 4
 
 [node name="Player" parent="." instance=ExtResource("1_jjgbg")]
 position = Vector2(616, 483)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(2, -75)
+
+[node name="CrumpledPaper" parent="." instance=ExtResource("4_jjvhh")]
+position = Vector2(176, 675)
+scale = Vector2(1.67606, 1.65331)
+
+[node name="CrumpledPaper2" parent="." instance=ExtResource("4_jjvhh")]
+position = Vector2(1044, 527)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
