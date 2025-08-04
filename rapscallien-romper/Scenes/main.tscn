@@ -5,8 +5,17 @@
 
 [node name="Main" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("1_jjgbg")]
-position = Vector2(602, 505)
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(49.08, 25.24)
+color = Color(0.556953, 0.556953, 0.556953, 1)
 
 [node name="Cursor" parent="." instance=ExtResource("2_bo1nx")]
 position = Vector2(739, 322)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(618, 408)
+
+[node name="Player" parent="." instance=ExtResource("1_jjgbg")]
+position = Vector2(616, 483)
