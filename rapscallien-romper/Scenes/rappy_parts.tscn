@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://d33xujgdx3l3t" path="res://Player Parts/Hair.png" id="11_64m2y"]
 [ext_resource type="Animation" uid="uid://b22pgurotp1jj" path="res://animations/RESET.res" id="12_1smmh"]
 [ext_resource type="PackedScene" uid="uid://dvnquttodk0wx" path="res://cursor.tscn" id="13_nidr5"]
-[ext_resource type="Script" uid="uid://cqkl1odu6nhxt" path="res://Scripts/cursor_marker.gd" id="14_dte2u"]
+[ext_resource type="Script" path="res://Scripts/cursor_marker.gd" id="14_dte2u"]
 
 [sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_fifcm"]
 resource_name = "head look 2"
