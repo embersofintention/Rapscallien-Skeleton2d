@@ -1,10 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://5m1x1642u5p0"]
+[gd_scene load_steps=4 format=3 uid="uid://cjem4rkv8344t"]
 
 [ext_resource type="Texture2D" uid="uid://cbce0h0ana65i" path="res://props/crumpled_paper.png" id="1_6o8jl"]
 [ext_resource type="Texture2D" uid="uid://d2s6qc5b07lsx" path="res://props/shadow.png" id="1_vrsj2"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_vrsj2"]
-radius = 33.0151
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vrsj2"]
+radius = 24.0
+height = 76.0
 
 [node name="CrumpledPaper" type="StaticBody2D"]
 
@@ -15,10 +16,11 @@ scale = Vector2(0.38, 0.231214)
 texture = ExtResource("1_vrsj2")
 
 [node name="CrumpledPaper" type="Sprite2D" parent="."]
-position = Vector2(-3.00001, -49)
+position = Vector2(-5, -51)
 scale = Vector2(0.392, 0.392)
 texture = ExtResource("1_6o8jl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -34)
-shape = SubResource("CircleShape2D_vrsj2")
+position = Vector2(0, -26)
+rotation = -1.57079
+shape = SubResource("CapsuleShape2D_vrsj2")
