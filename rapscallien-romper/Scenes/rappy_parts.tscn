@@ -9,9 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://dsf153y715qj3" path="res://Player Parts/Body2.png" id="6_qa18s"]
 [ext_resource type="Texture2D" uid="uid://dgowoldh63i57" path="res://Player Parts/Arm.png" id="7_yg36e"]
 [ext_resource type="Texture2D" uid="uid://cm6q434sses54" path="res://Player Parts/head.png" id="8_7thv2"]
-[ext_resource type="Texture2D" uid="uid://b7233yo4yp60u" path="res://Player Parts/rapscallien new head face noBG.png" id="9_c8f3y"]
 [ext_resource type="Texture2D" uid="uid://gkitx7w848tb" path="res://Player Parts/head blushy.png" id="9_g8b64"]
 [ext_resource type="Texture2D" uid="uid://cw6ot5srr0ghc" path="res://Player Parts/head excite.png" id="10_0fkcp"]
+[ext_resource type="Texture2D" uid="uid://dx6myeowqqk1c" path="res://Player Parts/rapscallien new head face 8D.png" id="10_dcpvy"]
 [ext_resource type="Texture2D" uid="uid://d33xujgdx3l3t" path="res://Player Parts/Hair.png" id="11_64m2y"]
 [ext_resource type="Animation" uid="uid://b22pgurotp1jj" path="res://animations/RESET.res" id="12_1smmh"]
 [ext_resource type="Texture2D" uid="uid://c132wjnwrohv3" path="res://Player Parts/rapscallien new head blank.png" id="12_xxv6c"]
@@ -1443,7 +1443,7 @@ internal_vertex_count = 2
 [node name="Head-Face" type="Polygon2D" parent="ALL_PARTS/POLYGONS"]
 position = Vector2(91, -338)
 offset = Vector2(-181, -107)
-texture = ExtResource("9_c8f3y")
+texture = ExtResource("10_dcpvy")
 skeleton = NodePath("../../Skeleton2D")
 polygon = PackedVector2Array(86.46, 83.6069, 93.9203, 45.3576, 143.375, 20.629, 162.969, 65.885, 184.896, 65.4165, 200.755, 19.2295, 242.278, 34.6268, 257.711, 78.3029, 274.469, 108.338, 274.002, 136.329, 249.121, 168.169, 206.669, 188.229, 146.49, 189.626, 106.993, 172.716, 78.5357, 135.862, 74.3371, 109.271, 90.2362, 109.088, 257.246, 109.554, 97.3366, 130.021, 246.983, 127.282, 167.212, 99.7535, 191.469, 98.3554, 147.423, 162.102, 202.937, 161.172, 212.328, 127.189, 139.749, 129.633, 102.357, 84.6578, 246.256, 81.3863, 145.319, 74.6013, 209.36, 75.0252, 112.762, 143.129, 230.461, 140.179, 155.075, 97.9267, 200.029, 99.6228)
 uv = PackedVector2Array(86.46, 83.6069, 93.9203, 45.3576, 143.375, 20.629, 162.969, 65.885, 184.896, 65.4165, 200.755, 19.2295, 242.278, 34.6268, 257.711, 78.3029, 274.469, 108.338, 274.002, 136.329, 249.121, 168.169, 206.669, 188.229, 146.49, 189.626, 106.993, 172.716, 78.5357, 135.862, 74.3371, 109.271, 90.2362, 109.088, 257.246, 109.554, 97.3366, 130.021, 246.983, 127.282, 167.212, 99.7535, 191.469, 98.3554, 147.423, 162.102, 202.937, 161.172, 212.328, 127.189, 139.749, 129.633, 102.357, 84.6578, 246.256, 81.3863, 145.319, 74.6013, 209.36, 75.0252, 112.762, 143.129, 230.461, 140.179, 155.075, 97.9267, 200.029, 99.6228)
@@ -1698,5 +1698,5 @@ visible = false
 position = Vector2(425, -322)
 
 [node name="cursor marker" type="Marker2D" parent="CanvasLayer"]
-position = Vector2(425, -322)
+position = Vector2(435, -382)
 script = ExtResource("14_dte2u")
