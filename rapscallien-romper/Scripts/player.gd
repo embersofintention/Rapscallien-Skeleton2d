@@ -20,8 +20,9 @@ func determine_direction():
 	
 	# Player faces direction
 	if direction: 
-		if velocity.x != 0 and velocity.y == 0: # if moving horizontally
-			rappy.all_parts.scale.x = sign(direction.x)
+		#if velocity.x != 0 and velocity.y == 0: # if moving horizontally
+		rappy.all_parts.scale.x = sign(direction.x) 
+		rappy.all_parts.scale.y = 1
 		
 func determine_velocity(): 
 	# set player velocity (simple for now)
