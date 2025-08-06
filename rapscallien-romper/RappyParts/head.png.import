@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c132wjnwrohv3"
-path="res://.godot/imported/rapscallien new head blank.png-d160d7843b9d58644ebcc9ad9d147c2a.ctex"
+uid="uid://cm6q434sses54"
+path="res://.godot/imported/head.png-e7db0c9758f5a2f0ca6d6cb2b7fe042c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player Parts/rapscallien new head blank.png"
-dest_files=["res://.godot/imported/rapscallien new head blank.png-d160d7843b9d58644ebcc9ad9d147c2a.ctex"]
+source_file="res://RappyParts/head.png"
+dest_files=["res://.godot/imported/head.png-e7db0c9758f5a2f0ca6d6cb2b7fe042c.ctex"]
 
 [params]
 

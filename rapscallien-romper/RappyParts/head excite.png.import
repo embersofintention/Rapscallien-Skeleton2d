@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byjiiv22kmijq"
-path="res://.godot/imported/godot skeleton2d Rapscallien 01.png-381a9de901238613d5f26fc97db65af2.ctex"
+uid="uid://cw6ot5srr0ghc"
+path="res://.godot/imported/head excite.png-6544efa1f6a6be627db3b3f71a8c7b36.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player Parts/godot skeleton2d Rapscallien 01.png"
-dest_files=["res://.godot/imported/godot skeleton2d Rapscallien 01.png-381a9de901238613d5f26fc97db65af2.ctex"]
+source_file="res://RappyParts/head excite.png"
+dest_files=["res://.godot/imported/head excite.png-6544efa1f6a6be627db3b3f71a8c7b36.ctex"]
 
 [params]
 

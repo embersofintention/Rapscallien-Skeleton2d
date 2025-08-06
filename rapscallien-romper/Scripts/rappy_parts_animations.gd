@@ -7,7 +7,7 @@ extends Node2D
 
 # Variables
 var current_animation:= "" # Storage for Animation Helper Function
-var current_face := "" # Storage for Face Swap
+var current_face  # Storage for Face Swap
 var anim_base_speed = 1.0 # animation playback speed; default = 1
 
 @onready var all_parts = %ALL_PARTS # contains polygons, skeleton, IK targets and faces
@@ -17,8 +17,8 @@ var anim_base_speed = 1.0 # animation playback speed; default = 1
 
 #Face Swapping Polygon2D 
 @onready var face = %HeadFaces # polygon2d to set face textures on
-var face_default = load("res://Player Parts/face_default.png")
-var face_happy = load("res://Player Parts/face_happy.png")
+var face_default = load("res://RappyParts/face_default.png")
+var face_happy = load("res://RappyParts/face_happy.png")
 
 
 
@@ -31,11 +31,11 @@ func change_animation(anim_name: String):
 		current_animation = anim_name
 		
 # Set face only if it's changed
-func change_face(face_name: String):
+func change_face(face_name):
 	if current_face != face_name: 
-		#face.texture = face_name
-		#current_face = face_name
-		pass
+		face.texture = face_name
+		current_face = face_name
+		
 
 
 # ANIMATION SWAPPING FUNCTION THINGS
@@ -43,14 +43,12 @@ func change_face(face_name: String):
 
 func is_idle():
 	change_animation("idle 1")
-	#change_face("face_default")
-	face.texture = face_default
+	change_face(face_default)
 	anim_base_speed = 1
 
 func is_running():
 	change_animation("run 1")
-	#change_face("face_happy")
-	face.texture = face_happy
+	change_face(face_happy)
 	anim_base_speed = 2
 
 

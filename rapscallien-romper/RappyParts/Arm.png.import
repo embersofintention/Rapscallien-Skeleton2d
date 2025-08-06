@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx6myeowqqk1c"
-path="res://.godot/imported/face_happy.png-f5ed15fd5c92acd686e0cb561cf3d4c9.ctex"
+uid="uid://dgowoldh63i57"
+path="res://.godot/imported/Arm.png-772ed5e2f6fe29ce1e26dd1d81ce209d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player Parts/face_happy.png"
-dest_files=["res://.godot/imported/face_happy.png-f5ed15fd5c92acd686e0cb561cf3d4c9.ctex"]
+source_file="res://RappyParts/Arm.png"
+dest_files=["res://.godot/imported/Arm.png-772ed5e2f6fe29ce1e26dd1d81ce209d.ctex"]
 
 [params]
 

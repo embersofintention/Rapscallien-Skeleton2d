@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cw6ot5srr0ghc"
-path="res://.godot/imported/head excite.png-852d1006f70779bc3a72878f0619ed05.ctex"
+uid="uid://d33xujgdx3l3t"
+path="res://.godot/imported/Hair.png-cadb7db6061251b049cbecbff0fa0307.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player Parts/head excite.png"
-dest_files=["res://.godot/imported/head excite.png-852d1006f70779bc3a72878f0619ed05.ctex"]
+source_file="res://RappyParts/Hair.png"
+dest_files=["res://.godot/imported/Hair.png-cadb7db6061251b049cbecbff0fa0307.ctex"]
 
 [params]
 

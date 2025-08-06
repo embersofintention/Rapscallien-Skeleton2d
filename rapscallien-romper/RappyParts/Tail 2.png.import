@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hal2p4yogqmm"
-path="res://.godot/imported/Tail 2.png-649323c692925b4f3e7ea2e4bc6b0056.ctex"
+path="res://.godot/imported/Tail 2.png-c1391279fd27f7856a593d177194d1da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player Parts/Tail 2.png"
-dest_files=["res://.godot/imported/Tail 2.png-649323c692925b4f3e7ea2e4bc6b0056.ctex"]
+source_file="res://RappyParts/Tail 2.png"
+dest_files=["res://.godot/imported/Tail 2.png-c1391279fd27f7856a593d177194d1da.ctex"]
 
 [params]
 

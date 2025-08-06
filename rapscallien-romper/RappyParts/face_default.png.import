@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7233yo4yp60u"
-path="res://.godot/imported/face_default.png-feda34a805cab104c467ffded416a80b.ctex"
+path="res://.godot/imported/face_default.png-d93ea823766779ca8a418bfc5401aa37.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player Parts/face_default.png"
-dest_files=["res://.godot/imported/face_default.png-feda34a805cab104c467ffded416a80b.ctex"]
+source_file="res://RappyParts/face_default.png"
+dest_files=["res://.godot/imported/face_default.png-d93ea823766779ca8a418bfc5401aa37.ctex"]
 
 [params]
 

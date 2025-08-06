@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gkitx7w848tb"
-path="res://.godot/imported/head blushy.png-9bc6baba69eb3ccce06d8115879f9f54.ctex"
+uid="uid://dx6myeowqqk1c"
+path="res://.godot/imported/face_happy.png-f8eedfbf75ff1fe7f3a8d51f0c94d363.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player Parts/head blushy.png"
-dest_files=["res://.godot/imported/head blushy.png-9bc6baba69eb3ccce06d8115879f9f54.ctex"]
+source_file="res://RappyParts/face_happy.png"
+dest_files=["res://.godot/imported/face_happy.png-f8eedfbf75ff1fe7f3a8d51f0c94d363.ctex"]
 
 [params]
 

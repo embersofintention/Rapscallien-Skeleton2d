@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d33xujgdx3l3t"
-path="res://.godot/imported/Hair.png-c3f6a5ac896905274eb2b59f61a0d07c.ctex"
+uid="uid://mu4siid5pf5y"
+path="res://.godot/imported/Body.png-a4f9583df1d529eac6fd6ad6bcef770a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player Parts/Hair.png"
-dest_files=["res://.godot/imported/Hair.png-c3f6a5ac896905274eb2b59f61a0d07c.ctex"]
+source_file="res://RappyParts/Body.png"
+dest_files=["res://.godot/imported/Body.png-a4f9583df1d529eac6fd6ad6bcef770a.ctex"]
 
 [params]
 
