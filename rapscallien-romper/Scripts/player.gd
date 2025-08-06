@@ -5,6 +5,7 @@ extends CharacterBody2D
 
 # Variables and Constants:
 var direction # Player direction -- 1=right, -1 = left
+var horizontal_direction: float
 const SPEED = 600 # base player movement speed
 
 @onready var rappy = %RappyParts # node with our animations and functions
@@ -17,12 +18,12 @@ func _ready() -> void:
 func determine_direction():
 	# get direction from player input
 	direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	horizontal_direction = sign(direction.x)
 	
 	# Player faces direction
-	# if direction: 
-	if velocity.length() != 0.0: # moving
-		rappy.all_parts.scale.x = direction.x
-		#if velocity.x != 0 and velocity.y == 0: # if moving horizontally
+	if direction: 
+		if velocity.x != 0 and velocity.y == 0: # if moving horizontally
+			rappy.all_parts.scale.x = horizontal_direction
 			#rappy.all_parts.scale.x = sign(direction.x) 
 		
 		
