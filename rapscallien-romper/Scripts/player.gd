@@ -19,10 +19,12 @@ func determine_direction():
 	direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	
 	# Player faces direction
-	if direction: 
+	# if direction: 
+	if velocity.length() != 0.0: # moving
+		rappy.all_parts.scale.x = direction.x
 		#if velocity.x != 0 and velocity.y == 0: # if moving horizontally
-		rappy.all_parts.scale.x = sign(direction.x) 
-		rappy.all_parts.scale.y = 1
+			#rappy.all_parts.scale.x = sign(direction.x) 
+		
 		
 func determine_velocity(): 
 	# set player velocity (simple for now)
