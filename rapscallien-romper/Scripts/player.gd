@@ -22,7 +22,7 @@ func determine_direction():
 	
 	# Player faces direction
 	if direction: 
-		if velocity.x != 0 and velocity.y == 0: # if moving horizontally
+		if velocity.x != 0: # if moving horizontally
 			rappy.all_parts.scale.x = horizontal_direction
 			#rappy.all_parts.scale.x = sign(direction.x) 
 		

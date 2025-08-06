@@ -42,7 +42,6 @@ constraint_in_localspace = true
 
 [sub_resource type="SkeletonModificationStack2D" id="SkeletonModificationStack2D_ix44y"]
 resource_name = "details"
-enabled = true
 modification_count = 2
 modifications/0 = SubResource("SkeletonModification2DLookAt_fifcm")
 modifications/1 = SubResource("SkeletonModification2DLookAt_xxv6c")
@@ -1494,7 +1493,6 @@ rest = Transform2D(1.00029, -4.94304e-05, 4.94304e-05, 1.00029, -14.0057, -108.0
 auto_calculate_length_and_angle = false
 length = 191.059
 bone_angle = 0.0
-metadata/_local_pose_override_enabled_ = true
 
 [node name="Faces" type="AnimatedSprite2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3/neck/head point"]
 unique_name_in_owner = true
@@ -1519,7 +1517,6 @@ rest = Transform2D(1, 0, 0, 1, 27.0123, -33.0151)
 auto_calculate_length_and_angle = false
 length = 207.47
 bone_angle = 0.0
-metadata/_local_pose_override_enabled_ = true
 
 [node name="Arm B 1" type="Bone2D" parent="ALL_PARTS/Skeleton2D/body1/body2/body3"]
 position = Vector2(35, -69)
